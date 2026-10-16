@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "emt:block/solars/triplesolartop",
+    "down": "emt:block/solars/bottom",
+    "north": "emt:block/solars/order/orderside",
+    "south": "emt:block/solars/order/orderside",
+    "west": "emt:block/solars/order/orderside",
+    "east": "emt:block/solars/order/orderside",
+    "particle": "emt:block/solars/order/orderside"
+  }
+}

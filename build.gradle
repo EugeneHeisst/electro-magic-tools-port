@@ -1,0 +1,26 @@
+plugins { id 'java-library'; id 'net.neoforged.moddev' version '2.0.148' }
+version = '0.1.0'
+group = 'dev.eugheist'
+base { archivesName = 'electro-magic-tools-modern' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+neoForge {
+ version = '21.1.256'
+ parchment { mappingsVersion = '2024.11.17'; minecraftVersion = '1.21.1' }
+ runs {
+  client { client(); gameDirectory = file('run') }
+  server { server(); gameDirectory = file('run-server'); programArgument '--nogui' }
+  audit { client(); gameDirectory = file('run-audit'); programArguments.addAll '--width','1280','--height','900','--quickPlaySingleplayer','EMTAudit'; systemProperty 'emt.audit','client' }
+ }
+ mods { emt { sourceSet sourceSets.main } }
+}
+def jeiJar = '/home/eugheist/.local/share/PrismLauncher/instances/1.21.1/minecraft/mods/jei-1.21.1-neoforge-19.57.0.451.jar'
+dependencies {
+ implementation files("../industrialcraft2-modern/versions/${ic2_version}/industrialcraft2-modern-${ic2_version}.jar")
+ implementation files("/home/eugheist/thaumcraft4-modern/versions/${tc4_version}/tc4modern-${tc4_version}.jar")
+ runtimeOnly files("../advanced-solar-panels-modern/versions/${asp_version}/advanced-solar-panels-modern-${asp_version}.jar")
+ compileOnly files(jeiJar)
+ if (providers.gradleProperty('withJei').getOrElse('false').toBoolean()) runtimeOnly files(jeiJar)
+}
+processResources { inputs.property 'version',version; filesMatching('META-INF/neoforge.mods.toml') { expand version:version,ic2_version:ic2_version,tc4_version:tc4_version } }

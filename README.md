@@ -1,11 +1,11 @@
 # Electro-Magic Tools PORT
 
-Неофициальный порт мода **Electro-Magic Tools 1.2.6.2** (авторы — fewizz, TheSilentium) на **Minecraft 1.21.1 / NeoForge**.
+Порт **Electro-Magic Tools 1.2.6.2** (fewizz, TheSilentium) на **Minecraft 1.21.1 / NeoForge 21.1.256**. В разработке, первая локальная партия **0.1.0**.
 
-Статус: в разработке.
+Готовы 21 вариант солнечных панелей, пять эссенциальных генераторов, промышленная зарядная станция жезлов и эфирный переработчик. Используются энергосеть IC2 и настоящие банки, жезлы, верстак, тигель и исследования Thaumcraft. Добавлены исходные материалы, текстуры, локализации, интерфейсы, магические рецепты и производственные цепочки IC2.
 
-## Требования
+Инструменты, броня, фокусы, кольца и остальные механизмы ещё переносятся. Подробный статус и точка продолжения: [CODEX_HANDOFF.md](CODEX_HANDOFF.md).
 
-- Minecraft **1.21.1**, NeoForge **21.1.256** или новее
-- [IndustrialCraft 2 PORT](https://github.com/EugeneHeisst/industrialcraft-port)
-- [Thaumcraft PORT](https://github.com/EugeneHeisst/thaumcraft-port)
+Требования: Java21, IC2 PORT0.1.18, Thaumcraft PORT0.17.172. Версии архивных зависимостей задаются в `gradle.properties`; пути — в `build.gradle`. ASP0.1.0 включён для совместного тестирования. JEI необязателен.
+
+Сборка: `./build.sh`. Серверная проверка: `JAVA_TOOL_OPTIONS=-Demt.audit=server ./gradlew runServer` (изолированный плоский мир run-server, порт25583). Скрытый беззвучный клиент: `./audit-client.sh -PwithJei=true` (мир EMTAudit в run-audit/saves). Артефакты проверенных сборок сохраняются в versions/0.1.0.

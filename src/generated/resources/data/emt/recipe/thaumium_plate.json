@@ -1,0 +1,23 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [
+    "X",
+    "Y",
+    "Z"
+  ],
+  "key": {
+    "X": {
+      "item": "ic2:forge_hammer"
+    },
+    "Y": {
+      "item": "tc4modern:thaumium_ingot"
+    },
+    "Z": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "id": "emt:thaumium_plate",
+    "count": 1
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "emt:compressed_solar",
+    "emt:double_compressed_solar",
+    "emt:triple_compressed_solar",
+    "emt:water_solar",
+    "emt:double_water_solar",
+    "emt:triple_water_solar",
+    "emt:dark_solar",
+    "emt:double_dark_solar",
+    "emt:triple_dark_solar",
+    "emt:order_solar",
+    "emt:double_order_solar",
+    "emt:triple_order_solar",
+    "emt:fire_solar",
+    "emt:double_fire_solar",
+    "emt:triple_fire_solar",
+    "emt:air_solar",
+    "emt:double_air_solar",
+    "emt:triple_air_solar",
+    "emt:earth_solar",
+    "emt:double_earth_solar",
+    "emt:triple_earth_solar",
+    "emt:potentia_generator",
+    "emt:ignis_generator",
+    "emt:auram_generator",
+    "emt:arbor_generator",
+    "emt:aer_generator",
+    "emt:industrial_wand_charger",
+    "emt:ethereal_processor"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "emt:block/essentiagenerator/top",
+    "down": "emt:block/essentiagenerator/top",
+    "north": "emt:block/essentiagenerator/potentiafront",
+    "south": "emt:block/essentiagenerator/side",
+    "west": "emt:block/essentiagenerator/side",
+    "east": "emt:block/essentiagenerator/side",
+    "particle": "emt:block/essentiagenerator/side"
+  }
+}

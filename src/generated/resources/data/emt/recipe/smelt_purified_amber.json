@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "emt:purified_amber"
+  },
+  "result": {
+    "id": "tc4modern:amber",
+    "count": 1
+  },
+  "experience": 0,
+  "cookingtime": 200
+}

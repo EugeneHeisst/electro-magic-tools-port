@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "facing=north,active=false": {
+      "model": "emt:block/water_solar",
+      "y": 0
+    },
+    "facing=north,active=true": {
+      "model": "emt:block/water_solar_active",
+      "y": 0
+    },
+    "facing=east,active=false": {
+      "model": "emt:block/water_solar",
+      "y": 90
+    },
+    "facing=east,active=true": {
+      "model": "emt:block/water_solar_active",
+      "y": 90
+    },
+    "facing=south,active=false": {
+      "model": "emt:block/water_solar",
+      "y": 180
+    },
+    "facing=south,active=true": {
+      "model": "emt:block/water_solar_active",
+      "y": 180
+    },
+    "facing=west,active=false": {
+      "model": "emt:block/water_solar",
+      "y": 270
+    },
+    "facing=west,active=true": {
+      "model": "emt:block/water_solar_active",
+      "y": 270
+    },
+    "facing=up,active=false": {
+      "model": "emt:block/water_solar",
+      "y": 0
+    },
+    "facing=up,active=true": {
+      "model": "emt:block/water_solar_active",
+      "y": 0
+    },
+    "facing=down,active=false": {
+      "model": "emt:block/water_solar",
+      "y": 0
+    },
+    "facing=down,active=true": {
+      "model": "emt:block/water_solar_active",
+      "y": 0
+    }
+  }
+}

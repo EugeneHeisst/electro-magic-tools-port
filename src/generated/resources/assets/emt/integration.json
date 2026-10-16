@@ -1,0 +1,1060 @@
+{
+  "recipes": [
+    {
+      "key": "emt:potentiaGenerator",
+      "research": "Potentia Generator",
+      "result": {
+        "id": "emt:potentia_generator",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "ENERGY": 32,
+        "MAGIC": 32,
+        "METAL": 32,
+        "EXCHANGE": 32
+      },
+      "central": {
+        "id": "ic2:semifluid_generator",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:focus_trade",
+          "count": 1
+        },
+        {
+          "id": "minecraft:hopper",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:warded_jar",
+          "count": 1
+        },
+        {
+          "id": "ic2:mv_transformer",
+          "count": 1
+        },
+        {
+          "id": "ic2:advanced_machine",
+          "count": 1
+        },
+        {
+          "id": "ic2:ore_washing_plant",
+          "count": 1
+        },
+        {
+          "id": "ic2:scrap",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:wandRecharger",
+      "research": "Industrial Wand Charging Station",
+      "result": {
+        "id": "emt:industrial_wand_charger",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "ENERGY": 48,
+        "CRAFT": 48,
+        "EXCHANGE": 48,
+        "GREED": 64
+      },
+      "central": {
+        "id": "tc4modern:wand_pedestal",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "ic2:replicator",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "minecraft:diamond_block",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:entropy_shard",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:warded_jar",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:etheralProcessor",
+      "research": "Etheral Processor",
+      "result": {
+        "id": "emt:ethereal_processor",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 3,
+      "aspects": {
+        "MECHANISM": 16,
+        "MAGIC": 16,
+        "CRAFT": 16
+      },
+      "central": {
+        "id": "ic2:macerator",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "ic2:electric_furnace",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:alchemical_construct",
+          "count": 1
+        },
+        {
+          "id": "minecraft:end_stone",
+          "count": 1
+        },
+        {
+          "id": "minecraft:end_stone",
+          "count": 1
+        },
+        {
+          "id": "minecraft:iron_block",
+          "count": 1
+        },
+        {
+          "id": "minecraft:iron_block",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:tripleCompressedSolar",
+      "research": "Compressed Solars",
+      "result": {
+        "id": "emt:triple_compressed_solar",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 2,
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "central": {
+        "id": "emt:double_compressed_solar",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:double_compressed_solar",
+          "count": 1
+        },
+        {
+          "id": "emt:double_compressed_solar",
+          "count": 1
+        },
+        {
+          "id": "emt:double_compressed_solar",
+          "count": 1
+        },
+        {
+          "id": "emt:double_compressed_solar",
+          "count": 1
+        },
+        {
+          "id": "emt:double_compressed_solar",
+          "count": 1
+        },
+        {
+          "id": "emt:double_compressed_solar",
+          "count": 1
+        },
+        {
+          "id": "emt:double_compressed_solar",
+          "count": 1
+        },
+        {
+          "id": "emt:double_compressed_solar",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:compressedSolar",
+      "research": "Compressed Solars",
+      "result": {
+        "id": "emt:compressed_solar",
+        "count": 1
+      },
+      "kind": "arcane",
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "pattern": [
+        "XXX",
+        "XXX",
+        "XXX"
+      ],
+      "keys": {
+        "X": {
+          "id": "ic2:solar_panel",
+          "count": 1
+        }
+      }
+    },
+    {
+      "key": "emt:doubleCompressedSolar",
+      "research": "Compressed Solars",
+      "result": {
+        "id": "emt:double_compressed_solar",
+        "count": 1
+      },
+      "kind": "arcane",
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "pattern": [
+        "XXX",
+        "XXX",
+        "XXX"
+      ],
+      "keys": {
+        "X": {
+          "id": "emt:compressed_solar",
+          "count": 1
+        }
+      }
+    },
+    {
+      "key": "emt:ignisGenerator",
+      "research": "Ignis Generator",
+      "result": {
+        "id": "emt:ignis_generator",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:potentia_generator",
+        "count": 1
+      },
+      "aspects": {
+        "FIRE": 16,
+        "EXCHANGE": 8
+      }
+    },
+    {
+      "key": "emt:auramGenerator",
+      "research": "Auram Generator",
+      "result": {
+        "id": "emt:auram_generator",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:potentia_generator",
+        "count": 1
+      },
+      "aspects": {
+        "AURA": 16,
+        "EXCHANGE": 8
+      }
+    },
+    {
+      "key": "emt:arborGenerator",
+      "research": "Arbor Generator",
+      "result": {
+        "id": "emt:arbor_generator",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:potentia_generator",
+        "count": 1
+      },
+      "aspects": {
+        "TREE": 16,
+        "EXCHANGE": 8
+      }
+    },
+    {
+      "key": "emt:aerGenerator",
+      "research": "Aer Generator",
+      "result": {
+        "id": "emt:aer_generator",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:potentia_generator",
+        "count": 1
+      },
+      "aspects": {
+        "EXCHANGE": 16,
+        "AIR": 8
+      }
+    },
+    {
+      "key": "emt:waterSolar",
+      "research": "Water Infused Solar Panels",
+      "result": {
+        "id": "emt:water_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "WATER": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:doubleWaterSolar",
+      "research": "Water Infused Solar Panels",
+      "result": {
+        "id": "emt:double_water_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:double_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "WATER": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:tripleWaterSolar",
+      "research": "Water Infused Solar Panels",
+      "result": {
+        "id": "emt:triple_water_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:triple_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "WATER": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:darkSolar",
+      "research": "Entropy Infused Solar Panels",
+      "result": {
+        "id": "emt:dark_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "ENTROPY": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:doubleDarkSolar",
+      "research": "Entropy Infused Solar Panels",
+      "result": {
+        "id": "emt:double_dark_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:double_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "ENTROPY": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:tripleDarkSolar",
+      "research": "Entropy Infused Solar Panels",
+      "result": {
+        "id": "emt:triple_dark_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:triple_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "ENTROPY": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:orderSolar",
+      "research": "Order Infused Solar Panels",
+      "result": {
+        "id": "emt:order_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "ORDER": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:doubleOrderSolar",
+      "research": "Order Infused Solar Panels",
+      "result": {
+        "id": "emt:double_order_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:double_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "ORDER": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:tripleOrderSolar",
+      "research": "Order Infused Solar Panels",
+      "result": {
+        "id": "emt:triple_order_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:triple_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "ORDER": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:fireSolar",
+      "research": "Fire Infused Solar Panels",
+      "result": {
+        "id": "emt:fire_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "FIRE": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:doubleFireSolar",
+      "research": "Fire Infused Solar Panels",
+      "result": {
+        "id": "emt:double_fire_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:double_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "FIRE": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:tripleFireSolar",
+      "research": "Fire Infused Solar Panels",
+      "result": {
+        "id": "emt:triple_fire_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:triple_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "FIRE": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:airSolar",
+      "research": "Air Infused Solar Panels",
+      "result": {
+        "id": "emt:air_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "AIR": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:doubleAirSolar",
+      "research": "Air Infused Solar Panels",
+      "result": {
+        "id": "emt:double_air_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:double_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "AIR": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:tripleAirSolar",
+      "research": "Air Infused Solar Panels",
+      "result": {
+        "id": "emt:triple_air_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:triple_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "AIR": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:earthSolar",
+      "research": "Earth Infused Solar Panels",
+      "result": {
+        "id": "emt:earth_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "EARTH": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:doubleEarthSolar",
+      "research": "Earth Infused Solar Panels",
+      "result": {
+        "id": "emt:double_earth_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:double_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "EARTH": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    },
+    {
+      "key": "emt:tripleEarthSolar",
+      "research": "Earth Infused Solar Panels",
+      "result": {
+        "id": "emt:triple_earth_solar",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "emt:triple_compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "EARTH": 16,
+        "MAGIC": 16,
+        "EXCHANGE": 16
+      }
+    }
+  ],
+  "researches": [
+    {
+      "name": "Electric Magic Tools",
+      "x": 0,
+      "y": 0,
+      "complexity": 0,
+      "icon": {
+        "id": "emt:thaumium_plate",
+        "count": 1
+      },
+      "aspects": {},
+      "parents": [],
+      "hidden": [],
+      "flags": [
+        "AutoUnlock",
+        "Round"
+      ],
+      "recipes": []
+    },
+    {
+      "name": "Thaumium Plate",
+      "x": 6,
+      "y": -6,
+      "complexity": 0,
+      "icon": {
+        "id": "emt:thaumium_plate",
+        "count": 1
+      },
+      "aspects": {},
+      "parents": [],
+      "hidden": [],
+      "flags": [
+        "AutoUnlock",
+        "Round"
+      ],
+      "recipes": [
+        "emt:thaumium_plate"
+      ]
+    },
+    {
+      "name": "Potentia Generator",
+      "x": -2,
+      "y": 3,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:potentia_generator",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 4,
+        "EXCHANGE": 4,
+        "METAL": 3
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:potentiaGenerator"
+      ]
+    },
+    {
+      "name": "Ignis Generator",
+      "x": -3,
+      "y": 4,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:ignis_generator",
+        "count": 1
+      },
+      "aspects": {
+        "EXCHANGE": 4,
+        "FIRE": 3
+      },
+      "parents": [
+        "Potentia Generator"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:ignisGenerator"
+      ]
+    },
+    {
+      "name": "Auram Generator",
+      "x": -1,
+      "y": 4,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:auram_generator",
+        "count": 1
+      },
+      "aspects": {
+        "EXCHANGE": 4,
+        "AURA": 3
+      },
+      "parents": [
+        "Potentia Generator"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:auramGenerator"
+      ]
+    },
+    {
+      "name": "Arbor Generator",
+      "x": -2,
+      "y": 5,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:arbor_generator",
+        "count": 1
+      },
+      "aspects": {
+        "EXCHANGE": 4,
+        "TREE": 3
+      },
+      "parents": [
+        "Potentia Generator"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:arborGenerator"
+      ]
+    },
+    {
+      "name": "Aer Generator",
+      "x": -2,
+      "y": 6,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:aer_generator",
+        "count": 1
+      },
+      "aspects": {
+        "EXCHANGE": 4,
+        "AIR": 3
+      },
+      "parents": [
+        "Potentia Generator"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:aerGenerator"
+      ]
+    },
+    {
+      "name": "Industrial Wand Charging Station",
+      "x": -4,
+      "y": 2,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:industrial_wand_charger",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 4,
+        "CRAFT": 2,
+        "EXCHANGE": 3,
+        "GREED": 5
+      },
+      "parents": [
+        "Potentia Generator"
+      ],
+      "hidden": [],
+      "flags": [],
+      "recipes": [
+        "emt:wandRecharger"
+      ]
+    },
+    {
+      "name": "Compressed Solars",
+      "x": -4,
+      "y": -5,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:compressed_solar",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 4,
+        "LIGHT": 3,
+        "METAL": 2
+      },
+      "parents": [],
+      "hidden": [
+        "Potentia Generator"
+      ],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:tripleCompressedSolar",
+        "emt:compressedSolar",
+        "emt:doubleCompressedSolar"
+      ]
+    },
+    {
+      "name": "Etheral Processor",
+      "x": -1,
+      "y": 2,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:ethereal_processor",
+        "count": 1
+      },
+      "aspects": {
+        "MECHANISM": 3,
+        "MAGIC": 4,
+        "CRAFT": 5
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:etheralProcessor"
+      ]
+    },
+    {
+      "name": "Water Infused Solar Panels",
+      "x": -7,
+      "y": -7,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:water_solar",
+        "count": 1
+      },
+      "aspects": {
+        "WATER": 4,
+        "MAGIC": 3,
+        "ENERGY": 4
+      },
+      "parents": [
+        "Compressed Solars"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary"
+      ],
+      "recipes": [
+        "emt:waterSolar",
+        "emt:doubleWaterSolar",
+        "emt:tripleWaterSolar"
+      ]
+    },
+    {
+      "name": "Entropy Infused Solar Panels",
+      "x": -8,
+      "y": -6,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:dark_solar",
+        "count": 1
+      },
+      "aspects": {
+        "ENTROPY": 4,
+        "MAGIC": 3,
+        "ENERGY": 4
+      },
+      "parents": [
+        "Compressed Solars"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary"
+      ],
+      "recipes": [
+        "emt:darkSolar",
+        "emt:doubleDarkSolar",
+        "emt:tripleDarkSolar"
+      ]
+    },
+    {
+      "name": "Order Infused Solar Panels",
+      "x": -6,
+      "y": -8,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:order_solar",
+        "count": 1
+      },
+      "aspects": {
+        "ORDER": 4,
+        "MAGIC": 3,
+        "ENERGY": 4
+      },
+      "parents": [
+        "Compressed Solars"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary"
+      ],
+      "recipes": [
+        "emt:orderSolar",
+        "emt:doubleOrderSolar",
+        "emt:tripleOrderSolar"
+      ]
+    },
+    {
+      "name": "Fire Infused Solar Panels",
+      "x": -5,
+      "y": -7,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:fire_solar",
+        "count": 1
+      },
+      "aspects": {
+        "FIRE": 4,
+        "MAGIC": 3,
+        "ENERGY": 4
+      },
+      "parents": [
+        "Compressed Solars"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary"
+      ],
+      "recipes": [
+        "emt:fireSolar",
+        "emt:doubleFireSolar",
+        "emt:tripleFireSolar"
+      ]
+    },
+    {
+      "name": "Air Infused Solar Panels",
+      "x": -4,
+      "y": -6,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:air_solar",
+        "count": 1
+      },
+      "aspects": {
+        "AIR": 4,
+        "MAGIC": 3,
+        "ENERGY": 4
+      },
+      "parents": [
+        "Compressed Solars"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary"
+      ],
+      "recipes": [
+        "emt:airSolar",
+        "emt:doubleAirSolar",
+        "emt:tripleAirSolar"
+      ]
+    },
+    {
+      "name": "Earth Infused Solar Panels",
+      "x": -6,
+      "y": -7,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:earth_solar",
+        "count": 1
+      },
+      "aspects": {
+        "EARTH": 4,
+        "MAGIC": 3,
+        "ENERGY": 4
+      },
+      "parents": [
+        "Compressed Solars"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary"
+      ],
+      "recipes": [
+        "emt:earthSolar",
+        "emt:doubleEarthSolar",
+        "emt:tripleEarthSolar"
+      ]
+    }
+  ]
+}

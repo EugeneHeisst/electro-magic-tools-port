@@ -1,0 +1,23 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [
+    "XYZ",
+    "XYZ",
+    "XYZ"
+  ],
+  "key": {
+    "X": {
+      "item": "emt:feather_mesh"
+    },
+    "Y": {
+      "item": "emt:glue"
+    },
+    "Z": {
+      "item": "emt:cardboard"
+    }
+  },
+  "result": {
+    "id": "emt:feather_glued_cardboard_wing",
+    "count": 1
+  }
+}

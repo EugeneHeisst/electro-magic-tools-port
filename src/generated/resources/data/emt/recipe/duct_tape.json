@@ -1,0 +1,20 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [
+    "XXX",
+    "YYY",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "emt:glue"
+    },
+    "Y": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "id": "emt:duct_tape",
+    "count": 1
+  }
+}

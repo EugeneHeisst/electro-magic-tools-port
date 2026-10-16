@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+[[mods]]
+modId="emt"
+version="${version}"
+displayName="Electro-Magic Tools PORT"
+authors="Original: fewizz, TheSilentium; port: EugeneHeisst"
+description='''Electro-Magic Tools 1.2.6.2 port for Minecraft 1.21.1.'''
+[[dependencies.emt]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.256,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.emt]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.emt]]
+modId="ic2"
+type="required"
+versionRange="[${ic2_version},)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.emt]]
+modId="tc4modern"
+type="required"
+versionRange="[${tc4_version},)"
+ordering="AFTER"
+side="BOTH"

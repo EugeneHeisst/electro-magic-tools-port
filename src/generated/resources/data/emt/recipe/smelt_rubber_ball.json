@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "emt:rubber_ball"
+  },
+  "result": {
+    "id": "emt:glue",
+    "count": 2
+  },
+  "experience": 0,
+  "cookingtime": 200
+}

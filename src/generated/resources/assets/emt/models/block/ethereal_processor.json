@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "emt:block/machines/etherealmaceratortop",
+    "down": "emt:block/machines/etherealmacerator",
+    "north": "emt:block/machines/etherealmaceratorfront",
+    "south": "emt:block/machines/etherealmacerator",
+    "west": "emt:block/machines/etherealmacerator",
+    "east": "emt:block/machines/etherealmacerator",
+    "particle": "emt:block/machines/etherealmacerator"
+  }
+}

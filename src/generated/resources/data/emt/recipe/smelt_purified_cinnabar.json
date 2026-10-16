@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "emt:purified_cinnabar"
+  },
+  "result": {
+    "id": "tc4modern:quicksilver",
+    "count": 1
+  },
+  "experience": 0,
+  "cookingtime": 200
+}

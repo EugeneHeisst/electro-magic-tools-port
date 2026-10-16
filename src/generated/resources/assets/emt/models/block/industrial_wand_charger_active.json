@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "emt:block/machines/top",
+    "down": "emt:block/machines/side",
+    "north": "emt:block/machines/wandcharger",
+    "south": "emt:block/machines/side",
+    "west": "emt:block/machines/side",
+    "east": "emt:block/machines/side",
+    "particle": "emt:block/machines/side"
+  }
+}
