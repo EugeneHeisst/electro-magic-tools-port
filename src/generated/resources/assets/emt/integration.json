@@ -534,6 +534,109 @@
       ]
     },
     {
+      "key": "emt:thorHammer",
+      "research": "Mjolnir",
+      "result": {
+        "id": "emt:mjolnir",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 7,
+      "aspects": {
+        "WEAPON": 48,
+        "WEATHER": 48,
+        "ELDRITCH": 32
+      },
+      "central": {
+        "id": "emt:tainted_mjolnir",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:lightning_summoner",
+          "count": 1
+        },
+        {
+          "id": "emt:lightning_summoner",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:elemental_sword",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:enchanted_fabric",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:focus_shock",
+          "count": 1
+        },
+        {
+          "id": "ic2:rubber",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:superchargedThorHammer",
+      "research": "Supercharged Mjolnir",
+      "result": {
+        "id": "emt:electric_mjolnir",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 10,
+      "aspects": {
+        "WEAPON": 48,
+        "ENERGY": 64,
+        "BEAST": 32
+      },
+      "central": {
+        "id": "emt:mjolnir",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:lightning_summoner",
+          "count": 1
+        },
+        {
+          "id": "emt:lightning_summoner",
+          "count": 1
+        },
+        {
+          "id": "minecraft:cobweb",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:focus_hellbat",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:elemental_sword",
+          "count": 1
+        },
+        {
+          "id": "ic2:lapotron_crystal",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:nano_saber",
+          "count": 1
+        }
+      ]
+    },
+    {
       "key": "emt:wandRecharger",
       "research": "Industrial Wand Charging Station",
       "result": {
@@ -2048,6 +2151,60 @@
       ]
     },
     {
+      "name": "The Legend",
+      "x": 5,
+      "y": -5,
+      "complexity": 0,
+      "icon": {
+        "id": "emt:tainted_mjolnir",
+        "count": 1
+      },
+      "aspects": {},
+      "parents": [],
+      "hidden": [],
+      "flags": [
+        "AutoUnlock",
+        "Round"
+      ],
+      "recipes": []
+    },
+    {
+      "name": "Lightning Summoner",
+      "x": 6,
+      "y": -5,
+      "complexity": 0,
+      "icon": {
+        "id": "emt:lightning_summoner",
+        "count": 1
+      },
+      "aspects": {},
+      "parents": [],
+      "hidden": [],
+      "flags": [
+        "AutoUnlock",
+        "Round"
+      ],
+      "recipes": []
+    },
+    {
+      "name": "The One Ring",
+      "x": 6,
+      "y": -7,
+      "complexity": 0,
+      "icon": {
+        "id": "emt:one_ring",
+        "count": 1
+      },
+      "aspects": {},
+      "parents": [],
+      "hidden": [],
+      "flags": [
+        "AutoUnlock",
+        "Round"
+      ],
+      "recipes": []
+    },
+    {
       "name": "Feather Wings",
       "x": 0,
       "y": 2,
@@ -2602,6 +2759,54 @@
       "flags": [],
       "recipes": [
         "emt:rockbreakerDrill"
+      ]
+    },
+    {
+      "name": "Mjolnir",
+      "x": -5,
+      "y": 5,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:mjolnir",
+        "count": 1
+      },
+      "aspects": {
+        "WEAPON": 3,
+        "WEATHER": 4,
+        "ELDRITCH": 3
+      },
+      "parents": [],
+      "hidden": [
+        "Electric Magic Tools"
+      ],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:thorHammer"
+      ]
+    },
+    {
+      "name": "Supercharged Mjolnir",
+      "x": -6,
+      "y": 6,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:electric_mjolnir",
+        "count": 1
+      },
+      "aspects": {
+        "WEAPON": 4,
+        "ENERGY": 6,
+        "BEAST": 4
+      },
+      "parents": [
+        "Mjolnir"
+      ],
+      "hidden": [],
+      "flags": [],
+      "recipes": [
+        "emt:superchargedThorHammer"
       ]
     },
     {

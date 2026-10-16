@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "emt:thaumium_wings"
+    "emt:thaumium_wings",
+    "emt:mjolnir",
+    "emt:tainted_mjolnir"
   ]
 }

@@ -365,5 +365,10 @@
   "item.emt.one_ring": "Кольцо Всевластия",
   "item.emt.armor_charging_ring": "Кольцо для зарядки брони",
   "item.emt.inventory_charging_ring": "Кольцо для зарядки инвентаря",
-  "message.emt.one_ring_warning": "§5Вы надели Кольцо. Порча вашего разума будет расти, и начнут происходить странные вещи."
+  "message.emt.one_ring_warning": "§5Вы надели Кольцо. Порча вашего разума будет расти, и начнут происходить странные вещи.",
+  "item.emt.mjolnir": "Мьёлнир",
+  "item.emt.tainted_mjolnir": "Сломанная реликвия Мьёлнира",
+  "item.emt.electric_mjolnir": "Сильнозаряженный Мьёлнир",
+  "entity.emt.guardian_archer": "Лучник-хранитель",
+  "item.emt.guardian_archer_spawn_egg": "Яйцо призыва лучника-хранителя"
 }

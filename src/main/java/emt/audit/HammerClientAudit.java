@@ -1,0 +1,30 @@
+package emt.audit;
+import emt.EMT;
+import emt.init.*;
+import emt.entity.*;
+import dev.eugheist.tc4modern.*;
+import net.minecraft.client.*;
+import net.minecraft.core.*;
+import net.minecraft.world.*;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.monster.Zombie;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.phys.AABB;
+import java.nio.file.*;
+public final class HammerClientAudit {
+ private static final BlockPos ARENA=new BlockPos(100,151,0);
+ private static void shot(Minecraft mc,String name){try(var img=Screenshot.takeScreenshot(mc.getMainRenderTarget())){img.writeToFile(Path.of("audit",name+".png"));}catch(Exception ex){throw new RuntimeException(ex);}}
+ public static void tick(Minecraft mc,int t){var server=mc.getSingleplayerServer();
+  if(t==2315){mc.player.closeContainer();mc.options.setCameraType(CameraType.FIRST_PERSON);server.execute(()->{var l=server.overworld();var p=server.getPlayerList().getPlayers().getFirst();l.getEntities(p,new AABB(85,145,-25,116,170,25),entity->true).forEach(Entity::discard);var worn=baubles.api.BaublesApi.getBaubles(p);for(int i=0;i<worn.getContainerSize();i++)worn.setItem(i,ItemStack.EMPTY);p.getInventory().selected=0;p.connection.send(new net.minecraft.network.protocol.game.ClientboundSetCarriedItemPacket(0));p.getInventory().clearContent();for(var slot:EquipmentSlot.values())p.setItemSlot(slot,ItemStack.EMPTY);p.removeAllEffects();p.setHealth(20);p.getAbilities().invulnerable=true;p.getAbilities().mayfly=true;p.getAbilities().flying=true;p.onUpdateAbilities();p.teleportTo(l,100.5,151,.5,0,0);for(var pos:BlockPos.betweenClosed(ARENA.offset(-12,-1,-12),ARENA.offset(12,-1,20)))l.setBlock(pos,Blocks.STONE.defaultBlockState(),3);l.setBlock(ARENA.offset(0,1,6),Blocks.STONE.defaultBlockState(),3);int i=0;for(var item:EMTItems.HAMMERS.values()){var s=new ItemStack(item.get());ic2.api.item.ElectricItem.manager.charge(s,100000,10,true,false);p.getInventory().setItem(i++,s);}for(var research:thaumcraft.api.research.ResearchCategories.getResearchList("EMT").research.values())ResearchProgress.add(p.getPersistentData(),research.key);net.neoforged.neoforge.network.PacketDistributor.sendToPlayer(p,new ScanPayload("",p.getPersistentData().getCompound(ResearchKnowledge.KEY)));});}
+  if(t==2340){for(var entry:EMTItems.HAMMERS.entrySet()){var s=new ItemStack(entry.getValue().get());var model=mc.getItemRenderer().getModel(s,mc.level,mc.player,0);if(model.getParticleIcon(net.neoforged.neoforge.client.model.data.ModelData.EMPTY).contents().name().getPath().equals("missingno"))throw new IllegalStateException("Missing hammer icon "+entry.getKey());}var type=EMTEntities.ARCHER.get();if(mc.getEntityRenderDispatcher().getRenderer(new EntityArcher(type,mc.level))==null)throw new IllegalStateException("Missing guardian renderer");EMT.LOG.info("[emt-client-audit] PASS all3 hammer icons and native snow-golem guardian renderer");mc.setScreen(new net.minecraft.client.gui.screens.inventory.InventoryScreen(mc.player));}
+  if(t==2350)shot(mc,"hammers_inventory");if(t==2355)mc.player.closeContainer();if(t==2360)mc.gameMode.useItem(mc.player,InteractionHand.MAIN_HAND);if(t==2363)shot(mc,"mjolnir_aimed_lightning");
+  if(t==2368)server.execute(()->{var p=server.getPlayerList().getPlayers().getFirst();if(p.getMainHandItem().getDamageValue()!=20)throw new IllegalStateException("Native aimed lightning packet did not consume20durability");EMT.LOG.info("[emt-client-audit] PASS native Mjolnir lightning packet/20durability");});
+  if(t==2370)mc.player.getInventory().selected=2;if(t==2375)mc.gameMode.useItem(mc.player,InteractionHand.MAIN_HAND);if(t==2378){shot(mc,"electric_mjolnir_storm");if(mc.level.getEntitiesOfClass(EntityArcher.class,mc.player.getBoundingBox().inflate(15)).size()!=4||mc.level.getEntitiesOfClass(LightningBolt.class,mc.player.getBoundingBox().inflate(15)).isEmpty())throw new IllegalStateException("Storm guardian/lightning spawn packets missing");EMT.LOG.info("[emt-client-audit] PASS real storm packet synchronizes4guardians and lightning");}
+  if(t==2382)server.execute(()->{var p=server.getPlayerList().getPlayers().getFirst();if(ic2.api.item.ElectricItem.manager.getCharge(p.getMainHandItem())!=25000)throw new IllegalStateException("Native storm EU debit");var zombie=new Zombie(server.overworld());zombie.setPos(100.5,151,16.5);server.overworld().addFreshEntity(zombie);p.teleportTo(server.overworld(),100.5,157,-18,0,20);});if(t==2405)shot(mc,"guardian_archers");
+  if(t==2410)server.execute(()->server.getPlayerList().getPlayers().getFirst().teleportTo(server.overworld(),100.5,151,.5,0,0));if(t==2415)mc.player.getInventory().selected=1;if(t==2420)mc.gameMode.useItem(mc.player,InteractionHand.MAIN_HAND);if(t==2428){shot(mc,"broken_mjolnir_alumentum");server.execute(()->{var p=server.getPlayerList().getPlayers().getFirst();if(p.getMainHandItem().getDamageValue()!=20)throw new IllegalStateException("Broken relic packet did not consume20durability");EMT.LOG.info("[emt-client-audit] PASS native broken relic packet/20durability");});}
+  if(t==2450)ClientAudit.book(mc,"Mjolnir",1);if(t==2465)shot(mc,"book_mjolnir");if(t==2475)ClientAudit.book(mc,"Supercharged Mjolnir",1);if(t==2490)shot(mc,"book_supercharged_mjolnir");
+  if(t==2505){var stack=EMTRecipes.stack("emt:electric_mjolnir");var lines=stack.getTooltipLines(Item.TooltipContext.of(mc.level),mc.player,TooltipFlag.NORMAL);if(lines.stream().anyMatch(line->line.getString().contains("%player%"))||lines.stream().noneMatch(line->line.getString().contains(mc.player.getName().getString())))throw new IllegalStateException("Hammer tooltip player substitution");EMT.LOG.info("[emt-client-audit] PASS personalized hammer tooltip");}
+  if(t==2515){mc.player.closeContainer();mc.player.getInventory().selected=0;}if(t==2530)shot(mc,"mjolnir_held");if(t==2540)mc.player.getInventory().selected=1;if(t==2560)shot(mc,"tainted_mjolnir_held");if(t==2570)mc.player.getInventory().selected=2;if(t==2590)shot(mc,"electric_mjolnir_held");
+ }
+}

@@ -366,5 +366,10 @@
   "item.emt.one_ring": "The One Ring",
   "item.emt.armor_charging_ring": "Armor Charging Ring",
   "item.emt.inventory_charging_ring": "Inventory Charging Ring",
-  "message.emt.one_ring_warning": "§5You have worn the Ring. Your mind will grow corrupted, and strange things will start happening."
+  "message.emt.one_ring_warning": "§5You have worn the Ring. Your mind will grow corrupted, and strange things will start happening.",
+  "item.emt.mjolnir": "Mjolnir",
+  "item.emt.tainted_mjolnir": "Broken Relic of Mjolnir",
+  "item.emt.electric_mjolnir": "Supercharged Mjolnir",
+  "entity.emt.guardian_archer": "Guardian Archer",
+  "item.emt.guardian_archer_spawn_egg": "Guardian Archer Spawn Egg"
 }
