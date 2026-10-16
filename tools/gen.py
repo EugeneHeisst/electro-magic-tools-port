@@ -70,6 +70,7 @@ def item(s):
  m=re.fullmatch(r'IC2Items.getItem\("([^"]+)"\)',s)
  if m:return {'id':'ic2:'+ic2[m[1]],'count':1}
  if s in ['Ic2Items.WindKineticGenerator','Ic2Items.WaterKineticGenerator']:return {'id':'ic2:'+('wind' if 'Wind' in s else 'water')+'_kinetic_generator','count':1}
+ if s=='itemStack':return {'id':'tc4modern:node_jar','count':1}
  if s=='Items.firework_charge':return {'id':'minecraft:firework_star','count':1}
  if s.startswith('Items.'):return {'id':'minecraft:'+s[6:],'count':1}
  if not s.startswith('new ItemStack('):raise ValueError(s)
@@ -80,6 +81,8 @@ def item(s):
  if base=='Blocks.sapling':return {'id':'minecraft:oak_sapling','tag':'minecraft:saplings','count':count}
  if base=='EMTItems.emtBauble':return {'id':'emt:'+['armor_charging_ring','inventory_charging_ring'][meta],'count':count}
  if base=='ConfigItems.itemBaubleBlanks':return {'id':'tc4modern:'+['mundane_amulet','mundane_ring','mundane_belt'][meta],'count':count}
+ if base=='EMTBlocks.portableNode':return {'id':'emt:portable_node','count':count}
+ if base=='EMTBlocks.electricCloud':return {'id':'emt:electric_cloud','count':count}
  if base=='EMTBlocks.shield':return {'id':'emt:shield','count':count}
  if base=='ConfigItems.itemShard' and meta==32767:return {'id':'tc4modern:air_shard','tag':'tc4modern:shards','count':count}
  if base=='ConfigItems.itemShard':return {'id':'tc4modern:'+['air','fire','water','earth','order','entropy'][meta]+'_shard','count':count}
@@ -102,7 +105,7 @@ def aspects(filename):
 costs=aspects('EMTCraftingAspects.java');tags=aspects('EMTResearchAspects.java');recipes=[];source=(SRC/'init/EMTRecipes.java').read_text()
 for m in re.finditer(r'(\w+) = ThaumcraftApi.add(InfusionCraftingRecipe|ArcaneCraftingRecipe|ShapelessArcaneCraftingRecipe|CrucibleRecipe)\(',source):
  end=source.index(';',m.start());a=split(source[m.end():end].strip()[:-1]);key=m[1];kind=m[2];raw=a[1]
- if not any('EMTBlocks.'+name in raw for name in ['emtSolars','essentiaGens','emtMachines','shield']) and not any('EMTItems.'+name+',' in raw or 'EMTItems.'+name+')' in raw for name in tools) and 'EMTItems.emtBauble' not in raw and not re.search(r'new ItemStack\(EMTItems.itemEMTItems,\s*1,\s*14\)',raw):continue
+ if not any('EMTBlocks.'+name in raw for name in ['emtSolars','essentiaGens','emtMachines','shield','portableNode']) and not any('EMTItems.'+name+',' in raw or 'EMTItems.'+name+')' in raw for name in tools) and 'EMTItems.emtBauble' not in raw and not re.search(r'new ItemStack\(EMTItems.itemEMTItems,\s*1,\s*14\)',raw):continue
  out=item(raw);entry={'key':'emt:'+key,'research':'Energy Ball Focus' if key=='energyBallFocus' else json.loads(a[0]),'result':out}
  if kind=='InfusionCraftingRecipe':entry.update(kind='infusion',instability=int(a[2]),aspects=(tags if a[3].startswith('EMTResearchAspects.') else costs)[a[3].split('.')[-1]],central=item(a[4]),components=[item(x) for x in split(a[5][a[5].index('{')+1:-1])])
  elif kind=='CrucibleRecipe':entry.update(kind='crucible',central=item(a[2]),aspects=(tags if a[3].startswith('EMTResearchAspects.') else costs)[a[3].split('.')[-1]])
@@ -115,7 +118,7 @@ for m in re.finditer(r'(\w+) = ThaumcraftApi.add(InfusionCraftingRecipe|ArcaneCr
   while args:c=args.pop(0).strip("'");keys[c]=item(args.pop(0))
   entry.update(kind='arcane',aspects=costs[a[2].split('.')[-1]],pattern=rows,keys=keys)
  recipes.append(entry)
-researches=[];wanted={r['research'] for r in recipes}|{'Electric Magic Tools','Thaumium Plate','Iron Omnitool','Diamond Chainsaw','Feather Wings','Energy Ball Focus','The Legend','The One Ring','Lightning Summoner'};source=(SRC/'init/EMTResearches.java').read_text()
+researches=[];wanted={r['research'] for r in recipes}|{'Electric Magic Tools','Thaumium Plate','Iron Omnitool','Diamond Chainsaw','Feather Wings','Energy Ball Focus','The Legend','The One Ring','Lightning Summoner','Electric Cloud'};source=(SRC/'init/EMTResearches.java').read_text()
 for m in re.finditer(r'new EMTResearchItem\(',source):
  end=source.index(';',m.start());block=source[m.end():end];depth=1;quote=False;cut=0
  for i,c in enumerate(block):
@@ -131,6 +134,7 @@ for m in re.finditer(r'new EMTResearchItem\(',source):
  for field,method in [('parents','setParents'),('hidden','setParentsHidden')]:
   match=re.search(r'\.'+method+r'\(new String\[\]\{([^}]+)\}',block);record[field]=re.findall(r'"([^"]+)"',match[1]) if match else []
  if name=='Energy Ball Focus':record['recipes']=['emt:energyBallFocus']
+ record['texts']=['emt.text.'+name+('.'+suffix if suffix else '') for suffix in re.findall(r'new ResearchPage\(\"([^\"]*)\"\)',block)] or ['emt.text.'+name]
  record['flags']=[flag for flag in ['Secondary','Concealed','AutoUnlock','Round'] if '.set'+flag+'()' in block];record['recipes']=[r['key'] for r in recipes if r['research']==name or name=='Energy Ball Focus' and r['key']=='emt:energyBallFocus']
  if name=='Thaumium Plate':record['recipes']=['emt:thaumium_plate']
  if name=='Iron Omnitool':record['recipes']=['emt:iron_omnitool']
@@ -213,3 +217,11 @@ for tag in ['weapon','sharp_weapon','sword']:
  write(path,data)
 # Original archer drop ranges, modern looting extras, plus its rare snowball.
 write(D/'loot_table/entities/guardian_archer.json',{'type':'minecraft:entity','pools':[{'rolls':1,'entries':[{'type':'minecraft:item','name':'minecraft:'+item}],'functions':[{'function':'minecraft:set_count','count':{'type':'minecraft:uniform','min':0,'max':2}},{'function':'minecraft:enchanted_count_increase','enchantment':'minecraft:looting','count':{'type':'minecraft:uniform','min':0,'max':1}}]} for item in ['arrow','bone']]+[{'rolls':1,'conditions':[{'condition':'minecraft:random_chance','chance':.025}],'entries':[{'type':'minecraft:item','name':'minecraft:snowball'}]}]})
+
+for name,texture in [('portable_node','portablenode'),('electric_cloud','electric_cloud')]:
+ write(A/'models/block'/f'{name}.json',{'parent':'minecraft:block/block','textures':{'particle':'emt:block/'+texture},'elements':[]});write(A/'blockstates'/f'{name}.json',{'variants':{'':{'model':'emt:block/'+name}}});write(A/'models/item'/f'{name}.json',{'parent':'minecraft:item/generated','textures':{'layer0':'emt:block/'+texture}})
+ write(D/'loot_table/blocks'/f'{name}.json',{'type':'minecraft:block','pools':[] if name=='portable_node' else [{'rolls':1,'entries':[{'type':'minecraft:item','name':'emt:'+name}],'conditions':[{'condition':'minecraft:survives_explosion'}]}]})
+for lang in ['en_us','ru_ru']:
+ path=A/'lang'/f'{lang}.json';data=json.loads(path.read_text())
+ for name,old in [('portable_node','portablenode'),('electric_cloud','electricCloud')]:data['block.emt.'+name]=data.get('tile.EMT.'+old+'.name',name.replace('_',' ').title())
+ write(path,data)

@@ -370,5 +370,7 @@
   "item.emt.tainted_mjolnir": "Сломанная реликвия Мьёлнира",
   "item.emt.electric_mjolnir": "Сильнозаряженный Мьёлнир",
   "entity.emt.guardian_archer": "Лучник-хранитель",
-  "item.emt.guardian_archer_spawn_egg": "Яйцо призыва лучника-хранителя"
+  "item.emt.guardian_archer_spawn_egg": "Яйцо призыва лучника-хранителя",
+  "block.emt.portable_node": "Переносной узел",
+  "block.emt.electric_cloud": "Наэлектризованное облако"
 }

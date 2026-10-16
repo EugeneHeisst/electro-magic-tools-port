@@ -2089,6 +2089,24 @@
         "MAGIC": 16,
         "EXCHANGE": 16
       }
+    },
+    {
+      "key": "emt:portableNode",
+      "research": "Portable Node",
+      "result": {
+        "id": "emt:portable_node",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "tc4modern:node_jar",
+        "count": 1
+      },
+      "aspects": {
+        "MAGIC": 32,
+        "AURA": 32,
+        "GREED": 32
+      }
     }
   ],
   "researches": [
@@ -2104,6 +2122,9 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "texts": [
+        "emt.text.Electric Magic Tools"
+      ],
       "flags": [
         "AutoUnlock",
         "Round"
@@ -2122,6 +2143,9 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "texts": [
+        "emt.text.Diamond Chainsaw"
+      ],
       "flags": [
         "AutoUnlock",
         "Round"
@@ -2142,6 +2166,9 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "texts": [
+        "emt.text.Thaumium Plate"
+      ],
       "flags": [
         "AutoUnlock",
         "Round"
@@ -2162,6 +2189,9 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "texts": [
+        "emt.text.The Legend"
+      ],
       "flags": [
         "AutoUnlock",
         "Round"
@@ -2180,6 +2210,9 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "texts": [
+        "emt.text.Lightning Summoner"
+      ],
       "flags": [
         "AutoUnlock",
         "Round"
@@ -2198,6 +2231,31 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "texts": [
+        "emt.text.The One Ring"
+      ],
+      "flags": [
+        "AutoUnlock",
+        "Round"
+      ],
+      "recipes": []
+    },
+    {
+      "name": "Electric Cloud",
+      "x": 4,
+      "y": -7,
+      "complexity": 0,
+      "icon": {
+        "id": "emt:electric_cloud",
+        "count": 1
+      },
+      "aspects": {},
+      "parents": [],
+      "hidden": [],
+      "texts": [
+        "emt.text.Electric Cloud.1",
+        "emt.text.Electric Cloud.2"
+      ],
       "flags": [
         "AutoUnlock",
         "Round"
@@ -2218,6 +2276,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Feather Wings"
+      ],
       "flags": [
         "AutoUnlock",
         "Round"
@@ -2246,6 +2307,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Thaumium Drill"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2272,6 +2336,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Thaumium Chainsaw"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2298,6 +2365,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Electric Goggles"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2325,6 +2395,9 @@
         "Electric Goggles"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Nanosuit Goggles of Revealing"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -2350,6 +2423,9 @@
         "Nanosuit Goggles of Revealing"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Quantum Goggles of Revealing"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -2371,6 +2447,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Iron Omnitool"
+      ],
       "flags": [
         "AutoUnlock",
         "Round"
@@ -2398,6 +2477,9 @@
         "Iron Omnitool"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Diamond Omnitool"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2429,6 +2511,9 @@
         "Thaumium Drill",
         "Thaumium Chainsaw"
       ],
+      "texts": [
+        "emt.text.Thaumium Omnitool"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -2455,6 +2540,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Explosion Focus"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -2481,6 +2569,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Kris-tmas Focus"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2508,6 +2599,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Shield Focus"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -2536,6 +2630,9 @@
       "recipes": [
         "emt:energyBallFocus"
       ],
+      "texts": [
+        "emt.text.Energy Ball Focus"
+      ],
       "flags": [
         "Concealed"
       ]
@@ -2557,6 +2654,9 @@
         "Shield Focus"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Shield Block"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2583,6 +2683,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Potentia Generator"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -2607,6 +2710,9 @@
         "Potentia Generator"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Ignis Generator"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2632,6 +2738,9 @@
         "Potentia Generator"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Auram Generator"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2657,6 +2766,9 @@
         "Potentia Generator"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Arbor Generator"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2682,6 +2794,9 @@
         "Potentia Generator"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Aer Generator"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2709,6 +2824,9 @@
         "Potentia Generator"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Industrial Wand Charging Station"
+      ],
       "flags": [],
       "recipes": [
         "emt:wandRecharger"
@@ -2733,6 +2851,9 @@
         "Thaumium Chainsaw"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Chainsaw of the Stream"
+      ],
       "flags": [],
       "recipes": [
         "emt:streamChainsaw"
@@ -2756,6 +2877,9 @@
         "Thaumium Drill"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Drill of the Rockbreaker"
+      ],
       "flags": [],
       "recipes": [
         "emt:rockbreakerDrill"
@@ -2778,6 +2902,9 @@
       "parents": [],
       "hidden": [
         "Electric Magic Tools"
+      ],
+      "texts": [
+        "emt.text.Mjolnir"
       ],
       "flags": [
         "Concealed"
@@ -2804,6 +2931,9 @@
         "Mjolnir"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Supercharged Mjolnir"
+      ],
       "flags": [],
       "recipes": [
         "emt:superchargedThorHammer"
@@ -2826,6 +2956,9 @@
       "parents": [],
       "hidden": [
         "Potentia Generator"
+      ],
+      "texts": [
+        "emt.text.Compressed Solars"
       ],
       "flags": [
         "Concealed"
@@ -2856,6 +2989,9 @@
       "hidden": [
         "Quantum Goggles of Revealing"
       ],
+      "texts": [
+        "emt.text.Solar Helmet of Revealing"
+      ],
       "flags": [
         "Secondary"
       ],
@@ -2881,6 +3017,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Electric Boots of the Traveller"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -2907,6 +3046,9 @@
         "Electric Boots of the Traveller"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Nano Boots of the Traveller"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -2932,6 +3074,9 @@
         "Nano Boots of the Traveller"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Quantum Boots of the Traveller"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -2956,6 +3101,9 @@
       "parents": [],
       "hidden": [
         "Electric Magic Tools"
+      ],
+      "texts": [
+        "emt.text.Electric Scribing Tools"
       ],
       "flags": [
         "Secondary",
@@ -2983,6 +3131,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Etheral Processor"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -3008,6 +3159,9 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Water Infused Solar Panels"
+      ],
       "flags": [
         "Secondary"
       ],
@@ -3035,6 +3189,9 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Entropy Infused Solar Panels"
+      ],
       "flags": [
         "Secondary"
       ],
@@ -3062,6 +3219,9 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Order Infused Solar Panels"
+      ],
       "flags": [
         "Secondary"
       ],
@@ -3089,6 +3249,9 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Fire Infused Solar Panels"
+      ],
       "flags": [
         "Secondary"
       ],
@@ -3116,6 +3279,9 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Air Infused Solar Panels"
+      ],
       "flags": [
         "Secondary"
       ],
@@ -3143,6 +3309,9 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Earth Infused Solar Panels"
+      ],
       "flags": [
         "Secondary"
       ],
@@ -3150,6 +3319,34 @@
         "emt:earthSolar",
         "emt:doubleEarthSolar",
         "emt:tripleEarthSolar"
+      ]
+    },
+    {
+      "name": "Portable Node",
+      "x": 2,
+      "y": 5,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:portable_node",
+        "count": 1
+      },
+      "aspects": {
+        "MAGIC": 5,
+        "AURA": 5,
+        "GREED": 5
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "texts": [
+        "emt.text.Portable Node"
+      ],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:portableNode"
       ]
     },
     {
@@ -3171,6 +3368,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Electric Hoe of Growth"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -3196,6 +3396,9 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Wand Focus: Charging"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -3222,6 +3425,9 @@
         "Wand Focus: Charging"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Wand Focus: Wand Charging"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -3246,6 +3452,9 @@
       "parents": [],
       "hidden": [
         "Electric Magic Tools"
+      ],
+      "texts": [
+        "emt.text.Inventory Charging Ring"
       ],
       "flags": [
         "Concealed"
@@ -3272,6 +3481,9 @@
         "Inventory Charging Ring"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Armor Charging Ring"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -3298,6 +3510,9 @@
         "Feather Wings"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Thaumium Reinforced Wings"
+      ],
       "flags": [
         "Secondary",
         "Concealed"
@@ -3326,6 +3541,9 @@
         "Thaumium Reinforced Wings"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Nanosuit Wings"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -3352,6 +3570,9 @@
         "Nanosuit Wings"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Quantum Wings"
+      ],
       "flags": [
         "Concealed"
       ],
@@ -3378,6 +3599,9 @@
         "Quantum Wings"
       ],
       "hidden": [],
+      "texts": [
+        "emt.text.Infused Quantum Armor"
+      ],
       "flags": [
         "Concealed"
       ],

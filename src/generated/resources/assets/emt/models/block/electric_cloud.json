@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "emt:block/electric_cloud"
+  },
+  "elements": []
+}

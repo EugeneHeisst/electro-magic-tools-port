@@ -14,10 +14,14 @@ public final class EMTBlocks {
  public static final DeferredRegister.Blocks BLOCKS=DeferredRegister.createBlocks(EMT.MODID);
  public static final DeferredRegister<BlockEntityType<?>> TILES=DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE,EMT.MODID);
  public static final DeferredBlock<emt.block.BlockShield> SHIELD=BLOCKS.register("shield",emt.block.BlockShield::new);
+ public static final DeferredBlock<emt.block.BlockPortableNode> PORTABLE_NODE=BLOCKS.register("portable_node",()->new emt.block.BlockPortableNode(BlockBehaviour.Properties.of().strength(-1,6000000).lightLevel(s->8).sound(new SoundType(0,1,net.minecraft.sounds.SoundEvents.WOOL_BREAK,net.minecraft.sounds.SoundEvents.WOOL_STEP,net.minecraft.sounds.SoundEvents.WOOL_PLACE,net.minecraft.sounds.SoundEvents.WOOL_HIT,net.minecraft.sounds.SoundEvents.WOOL_FALL)).noCollission().noOcclusion().noLootTable()));
+ public static final DeferredBlock<emt.block.BlockElectricCloud> ELECTRIC_CLOUD=BLOCKS.register("electric_cloud",()->new emt.block.BlockElectricCloud(BlockBehaviour.Properties.of().strength(.1f).sound(SoundType.WOOL).noCollission().noOcclusion().lightLevel(s->15)));
+ public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TilePortableNode>> PORTABLE_NODE_ENTITY=TILES.register("portable_node",()->BlockEntityType.Builder.of(TilePortableNode::new,PORTABLE_NODE.get()).build(null));
+ public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<TileElectricCloud>> ELECTRIC_CLOUD_ENTITY=TILES.register("electric_cloud",()->BlockEntityType.Builder.of(TileElectricCloud::new,ELECTRIC_CLOUD.get()).build(null));
  public static final Map<String,DeferredBlock<BlockTileEntity>> MACHINES=new LinkedHashMap<>();
  public static final Map<String,DeferredHolder<BlockEntityType<?>,BlockEntityType<?>>> TYPES=new LinkedHashMap<>();
  static {
-  EMTItems.ITEMS.registerSimpleBlockItem("shield",SHIELD);
+  EMTItems.ITEMS.registerSimpleBlockItem("shield",SHIELD);EMTItems.ITEMS.registerSimpleBlockItem("portable_node",PORTABLE_NODE);EMTItems.ITEMS.register("electric_cloud",()->new net.minecraft.world.item.BlockItem(ELECTRIC_CLOUD.get(),new net.minecraft.world.item.Item.Properties()){@Override public net.minecraft.network.chat.Component getName(net.minecraft.world.item.ItemStack stack){return super.getName(stack).copy().withStyle(net.minecraft.ChatFormatting.DARK_PURPLE,net.minecraft.ChatFormatting.BOLD);}});
   for(String kind:List.of("compressed","water","dark","order","fire","air","earth"))for(int stage=0;stage<3;stage++){String name=(stage==0?"":stage==1?"double_":"triple_")+kind+"_solar";final int rank=stage;add(name,(pos,state)->new TileSolar(pos,state,name,kind,rank));}
   for(String kind:List.of("potentia","ignis","auram","arbor","aer"))add(kind+"_generator",(pos,state)->new TileEssentiaGenerator(pos,state,kind));
   add("industrial_wand_charger",TileWandCharger::new);add("ethereal_processor",TileEtherealProcessor::new);

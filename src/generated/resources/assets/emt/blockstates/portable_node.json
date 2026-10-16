@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "emt:block/portable_node"
+    }
+  }
+}

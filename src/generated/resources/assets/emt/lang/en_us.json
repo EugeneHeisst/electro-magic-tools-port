@@ -371,5 +371,7 @@
   "item.emt.tainted_mjolnir": "Broken Relic of Mjolnir",
   "item.emt.electric_mjolnir": "Supercharged Mjolnir",
   "entity.emt.guardian_archer": "Guardian Archer",
-  "item.emt.guardian_archer_spawn_egg": "Guardian Archer Spawn Egg"
+  "item.emt.guardian_archer_spawn_egg": "Guardian Archer Spawn Egg",
+  "block.emt.portable_node": "Portable Node",
+  "block.emt.electric_cloud": "Electric Cloud"
 }
