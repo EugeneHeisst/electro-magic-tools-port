@@ -1,6 +1,542 @@
 {
   "recipes": [
     {
+      "key": "emt:uraniumToIridium",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "ic2:iridium_ore",
+        "count": 2
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 32,
+        "WATER": 32,
+        "AIR": 32,
+        "EARTH": 32,
+        "ORDER": 32,
+        "ENTROPY": 32
+      },
+      "central": {
+        "id": "ic2:uranium_238",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:diamondToUranium",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "ic2:uranium_238",
+        "count": 2
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 16,
+        "WATER": 16,
+        "AIR": 16,
+        "EARTH": 16,
+        "ORDER": 16,
+        "ENTROPY": 16
+      },
+      "central": {
+        "id": "minecraft:diamond",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:goldToDiamond",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "minecraft:diamond",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "central": {
+        "id": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:ironToGold",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "minecraft:gold_ingot",
+        "count": 2
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 4,
+        "WATER": 4,
+        "AIR": 4,
+        "EARTH": 4,
+        "ORDER": 4,
+        "ENTROPY": 4
+      },
+      "central": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:stoneBricksToIronOre",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "minecraft:iron_ore",
+        "count": 16
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "central": {
+        "id": "minecraft:stone_bricks",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:arcaneStoneToCopperOre",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "ic2:crushed_copper_ore",
+        "count": 32
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "central": {
+        "id": "tc4modern:arcane_stone",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:arcaneStoneBricksToTinOre",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "ic2:crushed_tin_ore",
+        "count": 32
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "central": {
+        "id": "tc4modern:arcane_stone_bricks",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:amberBlockToLeadOre",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "ic2:crushed_lead_ore",
+        "count": 32
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "central": {
+        "id": "tc4modern:amber_block",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:amberBricksToUraniumOre",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "ic2:uranium_ore",
+        "count": 8
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 16,
+        "WATER": 16,
+        "AIR": 16,
+        "EARTH": 16,
+        "ORDER": 16,
+        "ENTROPY": 16
+      },
+      "central": {
+        "id": "tc4modern:amber_bricks",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:charcoalToCoal",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "minecraft:coal",
+        "count": 16
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "central": {
+        "id": "minecraft:charcoal",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:shardToResin",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "ic2:resin",
+        "count": 21
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "central": {
+        "id": "tc4modern:earth_shard",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:shardToRedstone",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "minecraft:redstone",
+        "count": 24
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "central": {
+        "id": "tc4modern:fire_shard",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:shardToLapis",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "minecraft:lapis_lazuli",
+        "count": 8
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 8,
+        "WATER": 8,
+        "AIR": 8,
+        "EARTH": 8,
+        "ORDER": 8,
+        "ENTROPY": 8
+      },
+      "central": {
+        "id": "tc4modern:water_shard",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        },
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:glowstoneDustToBlock",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "minecraft:glowstone",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FIRE": 4,
+        "WATER": 4,
+        "AIR": 4,
+        "EARTH": 4,
+        "ORDER": 4,
+        "ENTROPY": 4
+      },
+      "central": {
+        "id": "minecraft:glowstone_dust",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:uu_matter_drop",
+          "count": 1
+        }
+      ]
+    },
+    {
       "key": "emt:thaumiumDrill",
       "research": "Thaumium Drill",
       "result": {
@@ -1547,6 +2083,33 @@
       }
     },
     {
+      "key": "emt:tinyUranium",
+      "research": "Tiny Uranium",
+      "result": {
+        "id": "ic2:small_uranium_235",
+        "count": 7
+      },
+      "kind": "arcane",
+      "aspects": {
+        "FIRE": 1,
+        "WATER": 1,
+        "AIR": 1,
+        "EARTH": 1,
+        "ORDER": 1,
+        "ENTROPY": 1
+      },
+      "pattern": [
+        "A"
+      ],
+      "keys": {
+        "A": {
+          "id": "ic2:uranium_238",
+          "count": 1
+        }
+      },
+      "shapeless": true
+    },
+    {
       "key": "emt:compressedSolar",
       "research": "Compressed Solars",
       "result": {
@@ -2107,6 +2670,24 @@
         "AURA": 32,
         "GREED": 32
       }
+    },
+    {
+      "key": "emt:uuMCrystal",
+      "research": "UU-Matter Infusion",
+      "result": {
+        "id": "emt:uu_matter_drop",
+        "count": 1
+      },
+      "kind": "crucible",
+      "central": {
+        "id": "ic2:uu_matter_cell",
+        "count": 1
+      },
+      "aspects": {
+        "CRYSTAL": 8,
+        "COLD": 8,
+        "MAGIC": 8
+      }
     }
   ],
   "researches": [
@@ -2122,14 +2703,14 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "recipes": [],
       "texts": [
         "emt.text.Electric Magic Tools"
       ],
       "flags": [
         "AutoUnlock",
         "Round"
-      ],
-      "recipes": []
+      ]
     },
     {
       "name": "Diamond Chainsaw",
@@ -2143,15 +2724,15 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "recipes": [
+        "emt:diamond_chainsaw"
+      ],
       "texts": [
         "emt.text.Diamond Chainsaw"
       ],
       "flags": [
         "AutoUnlock",
         "Round"
-      ],
-      "recipes": [
-        "emt:diamond_chainsaw"
       ]
     },
     {
@@ -2166,15 +2747,36 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "recipes": [
+        "emt:thaumium_plate"
+      ],
       "texts": [
         "emt.text.Thaumium Plate"
       ],
       "flags": [
         "AutoUnlock",
         "Round"
+      ]
+    },
+    {
+      "name": "Macerating Native Ore Clusters",
+      "x": 5,
+      "y": -7,
+      "complexity": 0,
+      "icon": {
+        "id": "ic2:small_gold_dust",
+        "count": 1
+      },
+      "aspects": {},
+      "parents": [],
+      "hidden": [],
+      "recipes": [],
+      "texts": [
+        "emt.text.Macerating Native Ore Clusters"
       ],
-      "recipes": [
-        "emt:thaumium_plate"
+      "flags": [
+        "AutoUnlock",
+        "Round"
       ]
     },
     {
@@ -2189,14 +2791,14 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "recipes": [],
       "texts": [
         "emt.text.The Legend"
       ],
       "flags": [
         "AutoUnlock",
         "Round"
-      ],
-      "recipes": []
+      ]
     },
     {
       "name": "Lightning Summoner",
@@ -2210,14 +2812,14 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "recipes": [],
       "texts": [
         "emt.text.Lightning Summoner"
       ],
       "flags": [
         "AutoUnlock",
         "Round"
-      ],
-      "recipes": []
+      ]
     },
     {
       "name": "The One Ring",
@@ -2231,14 +2833,14 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "recipes": [],
       "texts": [
         "emt.text.The One Ring"
       ],
       "flags": [
         "AutoUnlock",
         "Round"
-      ],
-      "recipes": []
+      ]
     },
     {
       "name": "Electric Cloud",
@@ -2252,6 +2854,7 @@
       "aspects": {},
       "parents": [],
       "hidden": [],
+      "recipes": [],
       "texts": [
         "emt.text.Electric Cloud.1",
         "emt.text.Electric Cloud.2"
@@ -2259,8 +2862,7 @@
       "flags": [
         "AutoUnlock",
         "Round"
-      ],
-      "recipes": []
+      ]
     },
     {
       "name": "Feather Wings",
@@ -2276,17 +2878,17 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:cardboard",
+        "emt:feather_glued_cardboard_wing",
+        "emt:feather_wings"
+      ],
       "texts": [
         "emt.text.Feather Wings"
       ],
       "flags": [
         "AutoUnlock",
         "Round"
-      ],
-      "recipes": [
-        "emt:cardboard",
-        "emt:feather_glued_cardboard_wing",
-        "emt:feather_wings"
       ]
     },
     {
@@ -2307,15 +2909,15 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:thaumiumDrill"
+      ],
       "texts": [
         "emt.text.Thaumium Drill"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:thaumiumDrill"
       ]
     },
     {
@@ -2336,15 +2938,15 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:thaumiumChainsaw"
+      ],
       "texts": [
         "emt.text.Thaumium Chainsaw"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:thaumiumChainsaw"
       ]
     },
     {
@@ -2365,16 +2967,15 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:electricGoggles"
+      ],
       "texts": [
         "emt.text.Electric Goggles"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:electricGoggles",
-        "emt:electricGoggles2"
       ]
     },
     {
@@ -2395,14 +2996,14 @@
         "Electric Goggles"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:thaumicNanoHelmet"
+      ],
       "texts": [
         "emt.text.Nanosuit Goggles of Revealing"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:thaumicNanoHelmet"
       ]
     },
     {
@@ -2423,14 +3024,14 @@
         "Nanosuit Goggles of Revealing"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:thaumicQuantumHelmet"
+      ],
       "texts": [
         "emt.text.Quantum Goggles of Revealing"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:thaumicQuantumHelmet"
       ]
     },
     {
@@ -2447,15 +3048,15 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:iron_omnitool"
+      ],
       "texts": [
         "emt.text.Iron Omnitool"
       ],
       "flags": [
         "AutoUnlock",
         "Round"
-      ],
-      "recipes": [
-        "emt:iron_omnitool"
       ]
     },
     {
@@ -2477,16 +3078,16 @@
         "Iron Omnitool"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:diamondOmnitool",
+        "emt:ironOmnitoolToDiamond"
+      ],
       "texts": [
         "emt.text.Diamond Omnitool"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:diamondOmnitool",
-        "emt:ironOmnitoolToDiamond"
       ]
     },
     {
@@ -2511,15 +3112,15 @@
         "Thaumium Drill",
         "Thaumium Chainsaw"
       ],
+      "recipes": [
+        "emt:thaumiumOmnitool",
+        "emt:diamondOmnitoolToThaumium"
+      ],
       "texts": [
         "emt.text.Thaumium Omnitool"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:thaumiumOmnitool",
-        "emt:diamondOmnitoolToThaumium"
       ]
     },
     {
@@ -2540,14 +3141,14 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:explosionFocus"
+      ],
       "texts": [
         "emt.text.Explosion Focus"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:explosionFocus"
       ]
     },
     {
@@ -2569,15 +3170,15 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:christmasFocus"
+      ],
       "texts": [
         "emt.text.Kris-tmas Focus"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:christmasFocus"
       ]
     },
     {
@@ -2599,14 +3200,14 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:shieldFocus"
+      ],
       "texts": [
         "emt.text.Shield Focus"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:shieldFocus"
       ]
     },
     {
@@ -2654,15 +3255,15 @@
         "Shield Focus"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:shieldBlock"
+      ],
       "texts": [
         "emt.text.Shield Block"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:shieldBlock"
       ]
     },
     {
@@ -2683,14 +3284,14 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:potentiaGenerator"
+      ],
       "texts": [
         "emt.text.Potentia Generator"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:potentiaGenerator"
       ]
     },
     {
@@ -2710,15 +3311,15 @@
         "Potentia Generator"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:ignisGenerator"
+      ],
       "texts": [
         "emt.text.Ignis Generator"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:ignisGenerator"
       ]
     },
     {
@@ -2738,15 +3339,15 @@
         "Potentia Generator"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:auramGenerator"
+      ],
       "texts": [
         "emt.text.Auram Generator"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:auramGenerator"
       ]
     },
     {
@@ -2766,15 +3367,15 @@
         "Potentia Generator"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:arborGenerator"
+      ],
       "texts": [
         "emt.text.Arbor Generator"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:arborGenerator"
       ]
     },
     {
@@ -2794,15 +3395,15 @@
         "Potentia Generator"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:aerGenerator"
+      ],
       "texts": [
         "emt.text.Aer Generator"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:aerGenerator"
       ]
     },
     {
@@ -2824,13 +3425,13 @@
         "Potentia Generator"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:wandRecharger"
+      ],
       "texts": [
         "emt.text.Industrial Wand Charging Station"
       ],
-      "flags": [],
-      "recipes": [
-        "emt:wandRecharger"
-      ]
+      "flags": []
     },
     {
       "name": "Chainsaw of the Stream",
@@ -2851,13 +3452,13 @@
         "Thaumium Chainsaw"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:streamChainsaw"
+      ],
       "texts": [
         "emt.text.Chainsaw of the Stream"
       ],
-      "flags": [],
-      "recipes": [
-        "emt:streamChainsaw"
-      ]
+      "flags": []
     },
     {
       "name": "Drill of the Rockbreaker",
@@ -2877,12 +3478,41 @@
         "Thaumium Drill"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:rockbreakerDrill"
+      ],
       "texts": [
         "emt.text.Drill of the Rockbreaker"
       ],
-      "flags": [],
+      "flags": []
+    },
+    {
+      "name": "Tiny Uranium",
+      "x": -5,
+      "y": -5,
+      "complexity": 1,
+      "icon": {
+        "id": "ic2:uranium_238",
+        "count": 1
+      },
+      "aspects": {
+        "POISON": 4,
+        "DEATH": 3,
+        "EXCHANGE": 3
+      },
+      "parents": [],
+      "hidden": [
+        "Electric Magic Tools"
+      ],
       "recipes": [
-        "emt:rockbreakerDrill"
+        "emt:tinyUranium"
+      ],
+      "texts": [
+        "emt.text.Tiny Uranium"
+      ],
+      "flags": [
+        "Secondary",
+        "Concealed"
       ]
     },
     {
@@ -2903,14 +3533,14 @@
       "hidden": [
         "Electric Magic Tools"
       ],
+      "recipes": [
+        "emt:thorHammer"
+      ],
       "texts": [
         "emt.text.Mjolnir"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:thorHammer"
       ]
     },
     {
@@ -2931,13 +3561,13 @@
         "Mjolnir"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:superchargedThorHammer"
+      ],
       "texts": [
         "emt.text.Supercharged Mjolnir"
       ],
-      "flags": [],
-      "recipes": [
-        "emt:superchargedThorHammer"
-      ]
+      "flags": []
     },
     {
       "name": "Compressed Solars",
@@ -2957,16 +3587,16 @@
       "hidden": [
         "Potentia Generator"
       ],
+      "recipes": [
+        "emt:compressedSolar",
+        "emt:doubleCompressedSolar",
+        "emt:tripleCompressedSolar"
+      ],
       "texts": [
         "emt.text.Compressed Solars"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:tripleCompressedSolar",
-        "emt:compressedSolar",
-        "emt:doubleCompressedSolar"
       ]
     },
     {
@@ -2989,14 +3619,14 @@
       "hidden": [
         "Quantum Goggles of Revealing"
       ],
+      "recipes": [
+        "emt:solarHelmetRevealing"
+      ],
       "texts": [
         "emt.text.Solar Helmet of Revealing"
       ],
       "flags": [
         "Secondary"
-      ],
-      "recipes": [
-        "emt:solarHelmetRevealing"
       ]
     },
     {
@@ -3017,15 +3647,15 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:electricBootsTravel"
+      ],
       "texts": [
         "emt.text.Electric Boots of the Traveller"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:electricBootsTravel"
       ]
     },
     {
@@ -3046,14 +3676,14 @@
         "Electric Boots of the Traveller"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:nanoBootsTravel"
+      ],
       "texts": [
         "emt.text.Nano Boots of the Traveller"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:nanoBootsTravel"
       ]
     },
     {
@@ -3074,14 +3704,14 @@
         "Nano Boots of the Traveller"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:quantumBootsTravel"
+      ],
       "texts": [
         "emt.text.Quantum Boots of the Traveller"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:quantumBootsTravel"
       ]
     },
     {
@@ -3102,15 +3732,15 @@
       "hidden": [
         "Electric Magic Tools"
       ],
+      "recipes": [
+        "emt:electricScribingTools"
+      ],
       "texts": [
         "emt.text.Electric Scribing Tools"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:electricScribingTools"
       ]
     },
     {
@@ -3131,14 +3761,14 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:etheralProcessor"
+      ],
       "texts": [
         "emt.text.Etheral Processor"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:etheralProcessor"
       ]
     },
     {
@@ -3159,16 +3789,16 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:waterSolar",
+        "emt:doubleWaterSolar",
+        "emt:tripleWaterSolar"
+      ],
       "texts": [
         "emt.text.Water Infused Solar Panels"
       ],
       "flags": [
         "Secondary"
-      ],
-      "recipes": [
-        "emt:waterSolar",
-        "emt:doubleWaterSolar",
-        "emt:tripleWaterSolar"
       ]
     },
     {
@@ -3189,16 +3819,16 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:darkSolar",
+        "emt:doubleDarkSolar",
+        "emt:tripleDarkSolar"
+      ],
       "texts": [
         "emt.text.Entropy Infused Solar Panels"
       ],
       "flags": [
         "Secondary"
-      ],
-      "recipes": [
-        "emt:darkSolar",
-        "emt:doubleDarkSolar",
-        "emt:tripleDarkSolar"
       ]
     },
     {
@@ -3219,16 +3849,16 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:orderSolar",
+        "emt:doubleOrderSolar",
+        "emt:tripleOrderSolar"
+      ],
       "texts": [
         "emt.text.Order Infused Solar Panels"
       ],
       "flags": [
         "Secondary"
-      ],
-      "recipes": [
-        "emt:orderSolar",
-        "emt:doubleOrderSolar",
-        "emt:tripleOrderSolar"
       ]
     },
     {
@@ -3249,16 +3879,16 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:fireSolar",
+        "emt:doubleFireSolar",
+        "emt:tripleFireSolar"
+      ],
       "texts": [
         "emt.text.Fire Infused Solar Panels"
       ],
       "flags": [
         "Secondary"
-      ],
-      "recipes": [
-        "emt:fireSolar",
-        "emt:doubleFireSolar",
-        "emt:tripleFireSolar"
       ]
     },
     {
@@ -3279,16 +3909,16 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:airSolar",
+        "emt:doubleAirSolar",
+        "emt:tripleAirSolar"
+      ],
       "texts": [
         "emt.text.Air Infused Solar Panels"
       ],
       "flags": [
         "Secondary"
-      ],
-      "recipes": [
-        "emt:airSolar",
-        "emt:doubleAirSolar",
-        "emt:tripleAirSolar"
       ]
     },
     {
@@ -3309,16 +3939,58 @@
         "Compressed Solars"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:earthSolar",
+        "emt:doubleEarthSolar",
+        "emt:tripleEarthSolar"
+      ],
       "texts": [
         "emt.text.Earth Infused Solar Panels"
       ],
       "flags": [
         "Secondary"
+      ]
+    },
+    {
+      "name": "UU-Matter Infusion",
+      "x": 5,
+      "y": 5,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:uu_matter_drop",
+        "count": 1
+      },
+      "aspects": {
+        "ELDRITCH": 4,
+        "MAGIC": 4,
+        "CRAFT": 5
+      },
+      "parents": [],
+      "hidden": [
+        "Electric Magic Tools"
       ],
       "recipes": [
-        "emt:earthSolar",
-        "emt:doubleEarthSolar",
-        "emt:tripleEarthSolar"
+        "emt:uuMCrystal",
+        "emt:charcoalToCoal",
+        "emt:glowstoneDustToBlock",
+        "emt:stoneBricksToIronOre",
+        "emt:arcaneStoneToCopperOre",
+        "emt:arcaneStoneBricksToTinOre",
+        "emt:amberBlockToLeadOre",
+        "emt:amberBricksToUraniumOre",
+        "emt:shardToResin",
+        "emt:shardToRedstone",
+        "emt:shardToLapis",
+        "emt:ironToGold",
+        "emt:goldToDiamond",
+        "emt:diamondToUranium",
+        "emt:uraniumToIridium"
+      ],
+      "texts": [
+        "emt.text.UU-Matter Infusion"
+      ],
+      "flags": [
+        "Concealed"
       ]
     },
     {
@@ -3339,14 +4011,14 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:portableNode"
+      ],
       "texts": [
         "emt.text.Portable Node"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:portableNode"
       ]
     },
     {
@@ -3368,14 +4040,14 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:electricHoeGrowth"
+      ],
       "texts": [
         "emt.text.Electric Hoe of Growth"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:electricHoeGrowth"
       ]
     },
     {
@@ -3396,14 +4068,14 @@
         "Electric Magic Tools"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:chargeFocus"
+      ],
       "texts": [
         "emt.text.Wand Focus: Charging"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:chargeFocus"
       ]
     },
     {
@@ -3425,14 +4097,14 @@
         "Wand Focus: Charging"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:wandChargeFocus"
+      ],
       "texts": [
         "emt.text.Wand Focus: Wand Charging"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:wandChargeFocus"
       ]
     },
     {
@@ -3453,14 +4125,14 @@
       "hidden": [
         "Electric Magic Tools"
       ],
+      "recipes": [
+        "emt:inventoryChargingRing"
+      ],
       "texts": [
         "emt.text.Inventory Charging Ring"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:inventoryChargingRing"
       ]
     },
     {
@@ -3481,15 +4153,15 @@
         "Inventory Charging Ring"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:armorChargingRing"
+      ],
       "texts": [
         "emt.text.Armor Charging Ring"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:armorChargingRing"
       ]
     },
     {
@@ -3510,16 +4182,16 @@
         "Feather Wings"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:thaumiumWing",
+        "emt:thaumiumWings"
+      ],
       "texts": [
         "emt.text.Thaumium Reinforced Wings"
       ],
       "flags": [
         "Secondary",
         "Concealed"
-      ],
-      "recipes": [
-        "emt:thaumiumWing",
-        "emt:thaumiumWings"
       ]
     },
     {
@@ -3541,14 +4213,14 @@
         "Thaumium Reinforced Wings"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:nanoWings"
+      ],
       "texts": [
         "emt.text.Nanosuit Wings"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:nanoWings"
       ]
     },
     {
@@ -3570,14 +4242,14 @@
         "Nanosuit Wings"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:quantumWings"
+      ],
       "texts": [
         "emt.text.Quantum Wings"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:quantumWings"
       ]
     },
     {
@@ -3599,15 +4271,160 @@
         "Quantum Wings"
       ],
       "hidden": [],
+      "recipes": [
+        "emt:infusedQuantumArmor"
+      ],
       "texts": [
         "emt.text.Infused Quantum Armor"
       ],
       "flags": [
         "Concealed"
-      ],
-      "recipes": [
-        "emt:infusedQuantumArmor"
       ]
+    }
+  ],
+  "object_tags": [
+    {
+      "id": "ic2:rubber_sheet",
+      "aspects": {
+        "AIR": 5
+      }
+    },
+    {
+      "id": "ic2:iron_fence",
+      "aspects": {
+        "ENERGY": 1,
+        "METAL": 2,
+        "WEATHER": 1
+      }
+    },
+    {
+      "id": "ic2:reinforced_glass",
+      "aspects": {
+        "METAL": 2,
+        "COLD": 2
+      }
+    },
+    {
+      "id": "ic2:scaffold",
+      "aspects": {
+        "TREE": 4
+      }
+    },
+    {
+      "id": "ic2:iron_scaffold",
+      "aspects": {
+        "METAL": 4
+      }
+    },
+    {
+      "id": "ic2:generator",
+      "aspects": {
+        "METAL": 2,
+        "ENERGY": 2,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:water_mill",
+      "aspects": {
+        "METAL": 2,
+        "ENERGY": 1,
+        "WATER": 2,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:solar_panel",
+      "aspects": {
+        "METAL": 1,
+        "ENERGY": 1,
+        "LIGHT": 2,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:wind_mill",
+      "aspects": {
+        "ENERGY": 1,
+        "WEATHER": 3,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:batbox",
+      "aspects": {
+        "METAL": 1,
+        "ENERGY": 3,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:cesu",
+      "aspects": {
+        "METAL": 2,
+        "ENERGY": 4,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:mfe",
+      "aspects": {
+        "METAL": 2,
+        "ENERGY": 5,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:mfsu",
+      "aspects": {
+        "METAL": 2,
+        "ENERGY": 7,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:iron_furnace",
+      "aspects": {
+        "METAL": 2,
+        "FIRE": 2,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:electric_furnace",
+      "aspects": {
+        "METAL": 2,
+        "ENERGY": 1,
+        "FIRE": 3,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:macerator",
+      "aspects": {
+        "METAL": 1,
+        "ENERGY": 2,
+        "MINE": 2,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:extractor",
+      "aspects": {
+        "METAL": 2,
+        "ENERGY": 1,
+        "CRAFT": 2,
+        "MECHANISM": 1
+      }
+    },
+    {
+      "id": "ic2:compressor",
+      "aspects": {
+        "METAL": 1,
+        "ENERGY": 2,
+        "VOID": 3,
+        "MECHANISM": 1
+      }
     }
   ]
 }

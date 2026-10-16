@@ -105,3 +105,12 @@ Original event hooks now cover One Ring mob pacification even when the curse tem
 Server **302/302** incl actual block-item generation, real native wand drain, typed block-entity save/reload, forced nature, blast/drop/shape/light/shift guards, actual nitor/battery/protection event, native target event and charged-creeper/tainted-chicken drop hooks, research+recipe. Hidden silent node-only client -PauditStart=2614 passed real placement/aspect/type packets, EMT goggles reveal native node, actual wand drain packet, nitor→cloud/256EU, native wisp shader/particles, node disposal packet, crucible+two cloud book pages incl original illustration. Visual node/cloud, drain and book pages inspected. Production TC4 remains172; all builds local; no install/push/release.
 
 Next: full UU transmutation/infusion recipes, research-disable flags, original explicit item aspects and native cluster harvest hooks, complete item/recipe/research parity audit; then Gravi Suit and final combined compatibility. User continuous goal remains active.
+
+
+## 2026-10-16 23:45 Moscow — EMT 0.1.7 complete (local only)
+- All 79 original magic recipes / 57 researches restored: UU cell crucible, fourteen UU infusions, Tiny Uranium arcane craft; preserve original book recipe order and multi-item output counts. Resolve original overlapping any-shard recipes with earth=resin/fire=redstone/water=lapis. Eighteen original explicit IC2 aspect tags imported.
+- Startup research disable list cascades through prerequisites and filters magic recipes and broken-Mjolnir loot. Isolated real-config test disables Drill/Shield/Mjolnir: 50 research/71 recipes, no leaks. Config restored byte-for-byte.
+- Native tin/silver/lead clusters supplied by TC4 local 0.17.176, acquired through native elemental pick and arcane bore typed addon hook; original aspects and smelt/blast2IC2ingots; all six cluster macerations.
+- TC4 fixes: addon categories must not suppress native research initialization; infusion aspect synthesis accounts for actual output count. No production changes (TC4 still172).
+- Validation: 355/355 server, hidden silent native client all82EMTmodels +3clusters, book UU multi-counts/order and TinyUranium7, JEI; final build/archive versions/0.1.7. Client scene -PauditStart=2924.
+- Original capesOn/smoke config fields have no consumers in supplied source, not gameplay omissions. Next: Gravi Suit 3.1.1 port, then combined regressions. Reference extracted/decompiled in ../gravisuite-modern/related/gravisuite-reference. Continuous goal remains active; no push/release/deploy.
