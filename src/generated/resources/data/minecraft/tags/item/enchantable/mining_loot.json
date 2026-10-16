@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "emt:thaumium_drill",
+    "emt:rockbreaker_drill",
+    "emt:diamond_chainsaw",
+    "emt:thaumium_chainsaw",
+    "emt:stream_chainsaw",
+    "emt:iron_omnitool",
+    "emt:diamond_omnitool",
+    "emt:thaumium_omnitool",
+    "emt:electric_hoe_growth",
+    "emt:electric_scribing_tools"
+  ]
+}

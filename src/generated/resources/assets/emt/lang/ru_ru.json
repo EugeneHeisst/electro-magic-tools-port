@@ -329,5 +329,15 @@
   "block.emt.aer_generator": "Aer генератор",
   "block.emt.industrial_wand_charger": "Промышленная станция зарядки жезлов",
   "block.emt.ethereal_processor": "Эфирный обработчик",
-  "itemGroup.emt": "Electro-Magic Tools"
+  "itemGroup.emt": "Electro-Magic Tools",
+  "item.emt.thaumium_drill": "Таум-бур",
+  "item.emt.rockbreaker_drill": "Бур Камнелома",
+  "item.emt.diamond_chainsaw": "Алмазная электропила",
+  "item.emt.thaumium_chainsaw": "Таум-электропила",
+  "item.emt.stream_chainsaw": "Электропила Потока",
+  "item.emt.iron_omnitool": "Железный мультиинструмент",
+  "item.emt.diamond_omnitool": "Алмазный мультиинструмент",
+  "item.emt.thaumium_omnitool": "Таум-мультиинструмент",
+  "item.emt.electric_hoe_growth": "Электрическая мотыга Роста",
+  "item.emt.electric_scribing_tools": "Электрическая чернильница с пером"
 }

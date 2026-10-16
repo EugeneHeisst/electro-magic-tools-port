@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "emt:item/tools/chainsaw_stream"
+  }
+}

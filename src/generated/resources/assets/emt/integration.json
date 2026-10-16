@@ -1,6 +1,191 @@
 {
   "recipes": [
     {
+      "key": "emt:thaumiumDrill",
+      "research": "Thaumium Drill",
+      "result": {
+        "id": "emt:thaumium_drill",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 5,
+      "aspects": {
+        "TOOL": 16,
+        "MINE": 16,
+        "ENERGY": 16
+      },
+      "central": {
+        "id": "ic2:diamond_drill",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:dense_iron_plate",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:thaumiumChainsaw",
+      "research": "Thaumium Chainsaw",
+      "result": {
+        "id": "emt:thaumium_chainsaw",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 5,
+      "aspects": {
+        "TOOL": 16,
+        "WEAPON": 16,
+        "ENERGY": 16
+      },
+      "central": {
+        "id": "emt:diamond_chainsaw",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:dense_iron_plate",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:thaumiumOmnitool",
+      "research": "Thaumium Omnitool",
+      "result": {
+        "id": "emt:thaumium_omnitool",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "TOOL": 25,
+        "MINE": 25,
+        "ENERGY": 25,
+        "WEAPON": 25
+      },
+      "central": {
+        "id": "emt:thaumium_chainsaw",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:thaumium_drill",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:carbon_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:obsidian_plate",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:diamondOmnitoolToThaumium",
+      "research": "Thaumium Omnitool",
+      "result": {
+        "id": "emt:thaumium_omnitool",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "TOOL": 25,
+        "MINE": 25,
+        "ENERGY": 25,
+        "WEAPON": 25
+      },
+      "central": {
+        "id": "emt:diamond_omnitool",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:diamond_block",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:alchemical_construct",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:alchemical_construct",
+          "count": 1
+        },
+        {
+          "id": "ic2:energy_crystal",
+          "count": 1
+        },
+        {
+          "id": "ic2:carbon_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:advanced_circuit",
+          "count": 1
+        }
+      ]
+    },
+    {
       "key": "emt:potentiaGenerator",
       "research": "Potentia Generator",
       "result": {
@@ -50,6 +235,107 @@
         },
         {
           "id": "ic2:scrap",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:streamChainsaw",
+      "research": "Chainsaw of the Stream",
+      "result": {
+        "id": "emt:stream_chainsaw",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "ENERGY": 48,
+        "TREE": 48,
+        "TOOL": 32,
+        "WATER": 32
+      },
+      "central": {
+        "id": "emt:thaumium_chainsaw",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:water_bucket",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:elemental_axe",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:greatwood_log",
+          "count": 1
+        },
+        {
+          "id": "ic2:lapotron_crystal",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:overclocker_upgrade",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:rockbreakerDrill",
+      "research": "Drill of the Rockbreaker",
+      "result": {
+        "id": "emt:rockbreaker_drill",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "TOOL": 32,
+        "ENERGY": 48,
+        "MINE": 32
+      },
+      "central": {
+        "id": "emt:thaumium_drill",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:flint_and_steel",
+          "count": 1
+        },
+        {
+          "id": "minecraft:fire_charge",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:elemental_pickaxe",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:elemental_shovel",
+          "count": 1
+        },
+        {
+          "id": "ic2:lapotron_crystal",
+          "count": 1
+        },
+        {
+          "id": "ic2:reinforced_stone",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:overclocker_upgrade",
           "count": 1
         }
       ]
@@ -206,6 +492,113 @@
       ]
     },
     {
+      "key": "emt:electricHoeGrowth",
+      "research": "Electric Hoe of Growth",
+      "result": {
+        "id": "emt:electric_hoe_growth",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "ENERGY": 32,
+        "PLANT": 25,
+        "CROP": 32,
+        "MAGIC": 48
+      },
+      "central": {
+        "id": "tc4modern:elemental_hoe",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "ic2:lapotron_crystal",
+          "count": 1
+        },
+        {
+          "id": "ic2:electric_hoe",
+          "count": 1
+        },
+        {
+          "id": "minecraft:bone_meal",
+          "count": 1
+        },
+        {
+          "id": "ic2:electric_motor",
+          "count": 1
+        },
+        {
+          "id": "ic2:coil",
+          "count": 1
+        },
+        {
+          "id": "minecraft:oak_sapling",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:diamondOmnitool",
+      "research": "Diamond Omnitool",
+      "result": {
+        "id": "emt:diamond_omnitool",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "arcane",
+      "aspects": {
+        "ORDER": 15,
+        "AIR": 15
+      },
+      "pattern": [
+        "AB"
+      ],
+      "keys": {
+        "A": {
+          "id": "emt:diamond_chainsaw",
+          "count": 1
+        },
+        "B": {
+          "id": "ic2:diamond_drill",
+          "count": 1
+        }
+      },
+      "shapeless": true
+    },
+    {
+      "key": "emt:ironOmnitoolToDiamond",
+      "research": "Diamond Omnitool",
+      "result": {
+        "id": "emt:diamond_omnitool",
+        "count": 1
+      },
+      "kind": "arcane",
+      "aspects": {
+        "ORDER": 15,
+        "AIR": 15
+      },
+      "pattern": [
+        "XAX",
+        "XBX",
+        "XAX"
+      ],
+      "keys": {
+        "X": {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        "A": {
+          "id": "ic2:advanced_circuit",
+          "count": 1
+        },
+        "B": {
+          "id": "emt:iron_omnitool",
+          "count": 1
+        }
+      }
+    },
+    {
       "key": "emt:compressedSolar",
       "research": "Compressed Solars",
       "result": {
@@ -257,6 +650,40 @@
       "keys": {
         "X": {
           "id": "emt:compressed_solar",
+          "count": 1
+        }
+      }
+    },
+    {
+      "key": "emt:electricScribingTools",
+      "research": "Electric Scribing Tools",
+      "result": {
+        "id": "emt:electric_scribing_tools",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "arcane",
+      "aspects": {
+        "AIR": 16,
+        "ORDER": 16,
+        "ENTROPY": 16
+      },
+      "pattern": [
+        "YXY",
+        "XZX",
+        "YXY"
+      ],
+      "keys": {
+        "Y": {
+          "id": "ic2:electronic_circuit",
+          "count": 1
+        },
+        "X": {
+          "id": "tc4modern:scribing_tools",
+          "count": 1
+        },
+        "Z": {
+          "id": "ic2:energy_crystal",
           "count": 1
         }
       }
@@ -674,6 +1101,26 @@
       "recipes": []
     },
     {
+      "name": "Diamond Chainsaw",
+      "x": 5,
+      "y": -6,
+      "complexity": 0,
+      "icon": {
+        "id": "emt:diamond_chainsaw",
+        "count": 1
+      },
+      "aspects": {},
+      "parents": [],
+      "hidden": [],
+      "flags": [
+        "AutoUnlock",
+        "Round"
+      ],
+      "recipes": [
+        "emt:diamond_chainsaw"
+      ]
+    },
+    {
       "name": "Thaumium Plate",
       "x": 6,
       "y": -6,
@@ -691,6 +1138,138 @@
       ],
       "recipes": [
         "emt:thaumium_plate"
+      ]
+    },
+    {
+      "name": "Thaumium Drill",
+      "x": -1,
+      "y": -2,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:thaumium_drill",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 5,
+        "TOOL": 6,
+        "MINE": 4
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:thaumiumDrill"
+      ]
+    },
+    {
+      "name": "Thaumium Chainsaw",
+      "x": -2,
+      "y": -2,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:thaumium_chainsaw",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 5,
+        "WEAPON": 6,
+        "TOOL": 4
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:thaumiumChainsaw"
+      ]
+    },
+    {
+      "name": "Iron Omnitool",
+      "x": -2,
+      "y": 0,
+      "complexity": 0,
+      "icon": {
+        "id": "emt:iron_omnitool",
+        "count": 1
+      },
+      "aspects": {},
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "AutoUnlock",
+        "Round"
+      ],
+      "recipes": [
+        "emt:iron_omnitool"
+      ]
+    },
+    {
+      "name": "Diamond Omnitool",
+      "x": -4,
+      "y": 0,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:diamond_omnitool",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 2,
+        "TOOL": 3,
+        "MINE": 2,
+        "WEAPON": 2
+      },
+      "parents": [
+        "Iron Omnitool"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:diamondOmnitool",
+        "emt:ironOmnitoolToDiamond"
+      ]
+    },
+    {
+      "name": "Thaumium Omnitool",
+      "x": -6,
+      "y": 0,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:thaumium_omnitool",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 5,
+        "TOOL": 6,
+        "MINE": 4,
+        "WEAPON": 6
+      },
+      "parents": [
+        "Diamond Omnitool"
+      ],
+      "hidden": [
+        "Thaumium Drill",
+        "Thaumium Chainsaw"
+      ],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:thaumiumOmnitool",
+        "emt:diamondOmnitoolToThaumium"
       ]
     },
     {
@@ -843,6 +1422,53 @@
       ]
     },
     {
+      "name": "Chainsaw of the Stream",
+      "x": -3,
+      "y": -4,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:stream_chainsaw",
+        "count": 1
+      },
+      "aspects": {
+        "TOOL": 3,
+        "TREE": 3,
+        "WATER": 6,
+        "ENERGY": 4
+      },
+      "parents": [
+        "Thaumium Chainsaw"
+      ],
+      "hidden": [],
+      "flags": [],
+      "recipes": [
+        "emt:streamChainsaw"
+      ]
+    },
+    {
+      "name": "Drill of the Rockbreaker",
+      "x": 0,
+      "y": -4,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:rockbreaker_drill",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 3,
+        "FIRE": 2,
+        "MINE": 3
+      },
+      "parents": [
+        "Thaumium Drill"
+      ],
+      "hidden": [],
+      "flags": [],
+      "recipes": [
+        "emt:rockbreakerDrill"
+      ]
+    },
+    {
       "name": "Compressed Solars",
       "x": -4,
       "y": -5,
@@ -867,6 +1493,32 @@
         "emt:tripleCompressedSolar",
         "emt:compressedSolar",
         "emt:doubleCompressedSolar"
+      ]
+    },
+    {
+      "name": "Electric Scribing Tools",
+      "x": -6,
+      "y": -5,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:electric_scribing_tools",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 5,
+        "DARKNESS": 3,
+        "CRAFT": 1
+      },
+      "parents": [],
+      "hidden": [
+        "Electric Magic Tools"
+      ],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:electricScribingTools"
       ]
     },
     {
@@ -1054,6 +1706,32 @@
         "emt:earthSolar",
         "emt:doubleEarthSolar",
         "emt:tripleEarthSolar"
+      ]
+    },
+    {
+      "name": "Electric Hoe of Growth",
+      "x": -1,
+      "y": -4,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:electric_hoe_growth",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 4,
+        "PLANT": 4,
+        "CROP": 5,
+        "MAGIC": 4
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:electricHoeGrowth"
       ]
     }
   ]

@@ -1,0 +1,26 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [
+    "X",
+    "Z",
+    "Y"
+  ],
+  "key": {
+    "X": {
+      "item": "ic2:chainsaw"
+    },
+    "Y": {
+      "item": "ic2:mining_drill"
+    },
+    "Z": {
+      "item": "ic2:iron_plate"
+    }
+  },
+  "result": {
+    "id": "emt:iron_omnitool",
+    "count": 1,
+    "components": {
+      "ic2:charge": 10.0
+    }
+  }
+}

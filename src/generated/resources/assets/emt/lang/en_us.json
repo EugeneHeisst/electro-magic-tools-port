@@ -330,5 +330,15 @@
   "block.emt.aer_generator": "Aer Generator",
   "block.emt.industrial_wand_charger": "Industrial Wand Recharge Station",
   "block.emt.ethereal_processor": "Ethereal Processor",
-  "itemGroup.emt": "Electro-Magic Tools"
+  "itemGroup.emt": "Electro-Magic Tools",
+  "item.emt.thaumium_drill": "Thaumium Drill",
+  "item.emt.rockbreaker_drill": "Drill of the Rockbreaker",
+  "item.emt.diamond_chainsaw": "Diamond Chainsaw",
+  "item.emt.thaumium_chainsaw": "Thaumium Chainsaw",
+  "item.emt.stream_chainsaw": "Chainsaw of the Stream",
+  "item.emt.iron_omnitool": "Iron Omnitool",
+  "item.emt.diamond_omnitool": "Diamond Omnitool",
+  "item.emt.thaumium_omnitool": "Thaumium Omnitool",
+  "item.emt.electric_hoe_growth": "Electric Hoe of Growth",
+  "item.emt.electric_scribing_tools": "Electric Scribing Tools"
 }
