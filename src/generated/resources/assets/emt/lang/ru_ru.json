@@ -355,5 +355,11 @@
   "block.emt.shield": "Щит-блок",
   "key.categories.emt": "Electro-Magic Tools",
   "message.emt.boost_on": "Ускорение ботинок включено",
-  "message.emt.boost_off": "Ускорение ботинок выключено"
+  "message.emt.boost_off": "Ускорение ботинок выключено",
+  "item.emt.focus_explosion": "Набалдашник: Взрыв",
+  "item.emt.focus_christmas": "Набалдашник: Рождество",
+  "item.emt.focus_shield": "Набалдашник: Щит",
+  "item.emt.focus_energy_ball": "Focus Energy Ball",
+  "item.emt.focus_charge": "Набалдашник: Зарядка",
+  "item.emt.focus_wand_charging": "Набалдашник: Зарядка жезла"
 }

@@ -356,5 +356,11 @@
   "block.emt.shield": "Shield Block",
   "key.categories.emt": "Electro-Magic Tools",
   "message.emt.boost_on": "Traveller boost enabled",
-  "message.emt.boost_off": "Traveller boost disabled"
+  "message.emt.boost_off": "Traveller boost disabled",
+  "item.emt.focus_explosion": "Wand Focus: Explosion",
+  "item.emt.focus_christmas": "Wand Focus: Kris-tmas",
+  "item.emt.focus_shield": "Wand Focus: Shield",
+  "item.emt.focus_energy_ball": "Focus Energy Ball",
+  "item.emt.focus_charge": "Wand Focus: Charging",
+  "item.emt.focus_wand_charging": "Wand Focus: Wand Charging"
 }

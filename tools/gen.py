@@ -17,7 +17,9 @@ def split(s):
 materials=['uranium_cluster','crushed_amber','purified_amber','crushed_cinnabar','purified_cinnabar','thaumium_plate','lightning_summoner','feather_mesh','glue','duct_tape','rubber_ball','cardboard','feather_glued_cardboard_wing','tainted_feather','thaumium_wing','uu_matter_drop']
 tools={'thaumiumDrill':'thaumium_drill','rockbreakerDrill':'rockbreaker_drill','diamondChainsaw':'diamond_chainsaw','thaumiumChainsaw':'thaumium_chainsaw','streamChainsaw':'stream_chainsaw','ironOmnitool':'iron_omnitool','diamondOmnitool':'diamond_omnitool','thaumiumOmnitool':'thaumium_omnitool','electricHoeGrowth':'electric_hoe_growth','electricScribingTools':'electric_scribing_tools'}
 armors={'electricGoggles':'electric_goggles','nanoThaumicHelmet':'nano_goggles','quantumThaumicHelmet':'quantum_goggles','solarHelmetRevealing':'solar_goggles','electricBootsTraveller':'electric_boots_traveller','nanoBootsTraveller':'nano_boots_traveller','quantumBootsTraveller':'quantum_boots_traveller','featherWing':'feather_wings','thaumiumWing':'thaumium_wings','nanoWing':'nano_wings','quantumWing':'quantum_wings','quantumArmor':'infused_quantum_chestplate'}
-tools.update(armors)
+foci={'explosionFocus':'focus_explosion','christmasFocus':'focus_christmas','shieldFocus':'focus_shield','energyBallFocus':'focus_energy_ball','chargeFocus':'focus_charge','wandChargeFocus':'focus_wand_charging'}
+focus_tex={'focus_explosion':'explosion','focus_christmas':'christmas','focus_shield':'shield','focus_energy_ball':'energyball','focus_charge':'charge','focus_wand_charging':'chargewand'}
+tools.update(armors);tools.update(foci)
 armortex={'electric_goggles':'goggles_electric','nano_goggles':'goggles_nano','quantum_goggles':'goggles_quantum','solar_goggles':'goggles_solar','electric_boots_traveller':'boots_electric','nano_boots_traveller':'boots_nano','quantum_boots_traveller':'boots_quantum','feather_wings':'wing_feather','thaumium_wings':'wing_thaumium','nano_wings':'wing_nano','quantum_wings':'wing_quantum','infused_quantum_chestplate':'armor_quantum_chest'}
 tooltex={'thaumium_drill':'tools/drill_thaumium','rockbreaker_drill':'tools/drill_rockbreaker','diamond_chainsaw':'tools/chainsaw_diamond','thaumium_chainsaw':'tools/chainsaw_thaumium','stream_chainsaw':'tools/chainsaw_stream','iron_omnitool':'tools/omnitool_iron','diamond_omnitool':'tools/omnitool_diamond','thaumium_omnitool':'tools/omnitool_thaumium','electric_hoe_growth':'tools/hoe_growth','electric_scribing_tools':'electric_scribing_tools'}
 materialtex=['clusteruranium','crushedamber','purifiedamber','crushedcinnabar','purifiedcinnabar','thaumiumplate','lightningsummoner','feathermesh','glue','ducttape','rubberball','cardboard','cardboardsheet','taintedfeather','thaumiumwing','uumatterdrop']
@@ -58,21 +60,23 @@ for lang,old in [('en_us','en_US'),('ru_ru','ru_RU')]:
  for bid in gens:data['block.emt.'+bid]=data['tile.EMT.essentia.'+bid.removesuffix('_generator')+'.name']
  data['block.emt.industrial_wand_charger']=data['gui.EMT.wandRecharge.title'];data['block.emt.ethereal_processor']=data['gui.EMT.etherealMacerator.title'];data['itemGroup.emt']='Electro-Magic Tools';write(A/'lang'/f'{lang}.json',data)
 # Translate only implemented output groups. Unknown ingredients fail generation instead of becoming air.
-ic2={'plateiron':'iron_plate','solarPanel':'solar_panel','semifluidGenerator':'semifluid_generator','mvTransformer':'mv_transformer','advancedMachine':'advanced_machine','orewashingplant':'ore_washing_plant','scrap':'scrap','replicator':'replicator','iridiumPlate':'iridium_plate','electroFurnace':'electric_furnace','macerator':'macerator','diamondDrill':'diamond_drill','denseplateiron':'dense_iron_plate','carbonPlate':'carbon_plate','plateobsidian':'obsidian_plate','lapotronCrystal':'lapotron_crystal','overclockerUpgrade':'overclocker_upgrade','reinforcedStone':'reinforced_stone','electricHoe':'electric_hoe','elemotor':'electric_motor','coil':'coil','energyCrystal':'energy_crystal','electronicCircuit':'electronic_circuit','advancedCircuit':'advanced_circuit','nanoHelmet':'nano_helmet','quantumHelmet':'quantum_helmet','reBattery':'re_battery','chargedReBattery':'re_battery','glassFiberCableItem':'glass_fibre_cable','hazmatBoots':'rubber_boots','advBattery':'advanced_re_battery','nanoBoots':'nano_boots','quantumBoots':'quantum_boots','nanoBodyarmor':'nano_chestplate','quantumBodyarmor':'quantum_chestplate'}
+ic2={'plateiron':'iron_plate','solarPanel':'solar_panel','semifluidGenerator':'semifluid_generator','mvTransformer':'mv_transformer','advancedMachine':'advanced_machine','orewashingplant':'ore_washing_plant','scrap':'scrap','replicator':'replicator','iridiumPlate':'iridium_plate','electroFurnace':'electric_furnace','macerator':'macerator','diamondDrill':'diamond_drill','denseplateiron':'dense_iron_plate','carbonPlate':'carbon_plate','plateobsidian':'obsidian_plate','lapotronCrystal':'lapotron_crystal','overclockerUpgrade':'overclocker_upgrade','reinforcedStone':'reinforced_stone','electricHoe':'electric_hoe','elemotor':'electric_motor','coil':'coil','energyCrystal':'energy_crystal','electronicCircuit':'electronic_circuit','advancedCircuit':'advanced_circuit','nanoHelmet':'nano_helmet','quantumHelmet':'quantum_helmet','reBattery':'re_battery','chargedReBattery':'re_battery','glassFiberCableItem':'glass_fibre_cable','hazmatBoots':'rubber_boots','advBattery':'advanced_re_battery','nanoBoots':'nano_boots','quantumBoots':'quantum_boots','nanoBodyarmor':'nano_chestplate','quantumBodyarmor':'quantum_chestplate','miningLaser':'mining_laser','reinforcedGlass':'reinforced_glass','generator':'generator','batBox':'batbox','energyPack':'energy_pack'}
 def item(s):
  s=s.strip()
  if s.startswith('EMTRandomHelper.getChargedItem('):
   args=split(s[len('EMTRandomHelper.getChargedItem('):-1]);return {'id':'emt:'+tools[args[0].split('.')[-1]],'count':1,'charge':int(args[1])}
  m=re.fullmatch(r'IC2Items.getItem\("([^"]+)"\)',s)
  if m:return {'id':'ic2:'+ic2[m[1]],'count':1}
+ if s=='Items.firework_charge':return {'id':'minecraft:firework_star','count':1}
  if s.startswith('Items.'):return {'id':'minecraft:'+s[6:],'count':1}
  if not s.startswith('new ItemStack('):raise ValueError(s)
  a=split(s[len('new ItemStack('):-1]);base=a[0];count=int(a[1]) if len(a)>1 else 1;meta=int(a[2]) if len(a)>2 else 0
  if base.startswith('IC2Items.getItem('):result=item(base.removesuffix('.getItem()'));result['count']=count;return result
  if base.startswith('EMTItems.') and base.split('.')[-1] in tools:return {'id':'emt:'+tools[base.split('.')[-1]],'count':count}
  if base=='Items.dye' and meta==15:return {'id':'minecraft:bone_meal','count':count}
- if base=='Blocks.sapling':return {'id':'minecraft:oak_sapling','count':count}
+ if base=='Blocks.sapling':return {'id':'minecraft:oak_sapling','tag':'minecraft:saplings','count':count}
  if base=='EMTBlocks.shield':return {'id':'emt:shield','count':count}
+ if base=='ConfigItems.itemShard' and meta==32767:return {'id':'tc4modern:air_shard','tag':'tc4modern:shards','count':count}
  if base=='ConfigItems.itemShard':return {'id':'tc4modern:'+['air','fire','water','earth','order','entropy'][meta]+'_shard','count':count}
  if base=='ConfigItems.itemResource':return {'id':'tc4modern:'+{1:'enchanted_fabric',2:'thaumium_ingot',12:'tainted_goo'}[meta],'count':count}
  if base=='EMTBlocks.emtSolars':iid=solars[meta]
@@ -80,10 +84,10 @@ def item(s):
  elif base=='EMTBlocks.essentiaGens':iid=gens[meta]
  elif base=='EMTBlocks.emtMachines':iid=['industrial_wand_charger','ethereal_processor'][meta]
  elif base=='EMTItems.itemEMTItems':iid=materials[meta]
- elif base.startswith('Items.'):return {'id':'minecraft:'+base[6:],'count':count}
+ elif base.startswith('Items.'):return {'id':'minecraft:'+{'firework_charge':'firework_star'}.get(base[6:],base[6:]),'count':count}
  elif base.startswith('Blocks.'):return {'id':'minecraft:'+base[7:],'count':count}
  else:
-  mapping={'ConfigItems.itemFocusTrade':'focus_trade','ConfigBlocks.blockJar':'warded_jar','ConfigBlocks.blockStoneDevice':'wand_pedestal','ConfigBlocks.blockMetalDevice':'alchemical_construct','ConfigItems.itemShard':'entropy_shard','ConfigItems.itemAxeElemental':'elemental_axe','ConfigItems.itemPickElemental':'elemental_pickaxe','ConfigItems.itemShovelElemental':'elemental_shovel','ConfigItems.itemHoeElemental':'elemental_hoe','ConfigBlocks.blockMagicalLog':'greatwood_log','ConfigItems.itemInkwell':'scribing_tools','ConfigItems.itemGoggles':'goggles','ConfigItems.itemBootsTraveller':'boots_traveller'}
+  mapping={'ConfigItems.itemFocusHellbat':'focus_hellbat','ConfigItems.itemFocusPortableHole':'focus_portable_hole','ConfigItems.itemFocusFrost':'focus_frost','ConfigItems.itemFocusShock':'focus_shock','ConfigItems.itemFocusTrade':'focus_trade','ConfigBlocks.blockJar':'warded_jar','ConfigBlocks.blockStoneDevice':'wand_pedestal','ConfigBlocks.blockMetalDevice':'alchemical_construct','ConfigItems.itemShard':'entropy_shard','ConfigItems.itemAxeElemental':'elemental_axe','ConfigItems.itemPickElemental':'elemental_pickaxe','ConfigItems.itemShovelElemental':'elemental_shovel','ConfigItems.itemHoeElemental':'elemental_hoe','ConfigBlocks.blockMagicalLog':'greatwood_log','ConfigItems.itemInkwell':'scribing_tools','ConfigItems.itemGoggles':'goggles','ConfigItems.itemBootsTraveller':'boots_traveller'}
   return {'id':'tc4modern:'+mapping[base],'count':count}
  return {'id':'emt:'+iid,'count':count}
 def aspects(filename):
@@ -94,9 +98,9 @@ costs=aspects('EMTCraftingAspects.java');tags=aspects('EMTResearchAspects.java')
 for m in re.finditer(r'(\w+) = ThaumcraftApi.add(InfusionCraftingRecipe|ArcaneCraftingRecipe|ShapelessArcaneCraftingRecipe|CrucibleRecipe)\(',source):
  end=source.index(';',m.start());a=split(source[m.end():end].strip()[:-1]);key=m[1];kind=m[2];raw=a[1]
  if not any('EMTBlocks.'+name in raw for name in ['emtSolars','essentiaGens','emtMachines','shield']) and not any('EMTItems.'+name+',' in raw or 'EMTItems.'+name+')' in raw for name in tools) and not re.search(r'new ItemStack\(EMTItems.itemEMTItems,\s*1,\s*14\)',raw):continue
- out=item(raw);entry={'key':'emt:'+key,'research':json.loads(a[0]),'result':out}
- if kind=='InfusionCraftingRecipe':entry.update(kind='infusion',instability=int(a[2]),aspects=costs[a[3].split('.')[-1]],central=item(a[4]),components=[item(x) for x in split(a[5][a[5].index('{')+1:-1])])
- elif kind=='CrucibleRecipe':entry.update(kind='crucible',central=item(a[2]),aspects=costs[a[3].split('.')[-1]])
+ out=item(raw);entry={'key':'emt:'+key,'research':'Energy Ball Focus' if key=='energyBallFocus' else json.loads(a[0]),'result':out}
+ if kind=='InfusionCraftingRecipe':entry.update(kind='infusion',instability=int(a[2]),aspects=(tags if a[3].startswith('EMTResearchAspects.') else costs)[a[3].split('.')[-1]],central=item(a[4]),components=[item(x) for x in split(a[5][a[5].index('{')+1:-1])])
+ elif kind=='CrucibleRecipe':entry.update(kind='crucible',central=item(a[2]),aspects=(tags if a[3].startswith('EMTResearchAspects.') else costs)[a[3].split('.')[-1]])
  else:
   args=split(a[3][a[3].index('{')+1:-1]);rows=[]
   if kind=='ShapelessArcaneCraftingRecipe':
@@ -106,7 +110,7 @@ for m in re.finditer(r'(\w+) = ThaumcraftApi.add(InfusionCraftingRecipe|ArcaneCr
   while args:c=args.pop(0).strip("'");keys[c]=item(args.pop(0))
   entry.update(kind='arcane',aspects=costs[a[2].split('.')[-1]],pattern=rows,keys=keys)
  recipes.append(entry)
-researches=[];wanted={r['research'] for r in recipes}|{'Electric Magic Tools','Thaumium Plate','Iron Omnitool','Diamond Chainsaw','Feather Wings'};source=(SRC/'init/EMTResearches.java').read_text()
+researches=[];wanted={r['research'] for r in recipes}|{'Electric Magic Tools','Thaumium Plate','Iron Omnitool','Diamond Chainsaw','Feather Wings','Energy Ball Focus'};source=(SRC/'init/EMTResearches.java').read_text()
 for m in re.finditer(r'new EMTResearchItem\(',source):
  end=source.index(';',m.start());block=source[m.end():end];depth=1;quote=False;cut=0
  for i,c in enumerate(block):
@@ -121,7 +125,8 @@ for m in re.finditer(r'new EMTResearchItem\(',source):
  icon={'id':'emt:thaumium_plate','count':1} if 'ResourceLocation' in a[-1] else item(a[-1]);record={'name':name,'x':int(a[1+offset]),'y':int(a[2+offset]),'complexity':int(a[3+offset]),'icon':icon,'aspects':tags[a[1].split('.')[-1]] if offset else {}}
  for field,method in [('parents','setParents'),('hidden','setParentsHidden')]:
   match=re.search(r'\.'+method+r'\(new String\[\]\{([^}]+)\}',block);record[field]=re.findall(r'"([^"]+)"',match[1]) if match else []
- record['flags']=[flag for flag in ['Secondary','Concealed','AutoUnlock','Round'] if '.set'+flag+'()' in block];record['recipes']=[r['key'] for r in recipes if r['research']==name]
+ if name=='Energy Ball Focus':record['recipes']=['emt:energyBallFocus']
+ record['flags']=[flag for flag in ['Secondary','Concealed','AutoUnlock','Round'] if '.set'+flag+'()' in block];record['recipes']=[r['key'] for r in recipes if r['research']==name or name=='Energy Ball Focus' and r['key']=='emt:energyBallFocus']
  if name=='Thaumium Plate':record['recipes']=['emt:thaumium_plate']
  if name=='Iron Omnitool':record['recipes']=['emt:iron_omnitool']
  if name=='Diamond Chainsaw':record['recipes']=['emt:diamond_chainsaw']
@@ -175,3 +180,9 @@ for lang in ['en_us','ru_ru']:
 # Native enchantment definitions select armor by tags; optional electric enchantability is guarded in each item.
 for tag,values in {'armor':list(armortex),'head_armor':[n for n in armortex if 'goggles' in n],'foot_armor':[n for n in armortex if 'boots' in n],'chest_armor':[n for n in armortex if 'wings' in n or 'chestplate' in n]}.items():
  write(RES/'data/minecraft/tags/item/enchantable'/f'{tag}.json',{'replace':False,'values':['emt:'+n for n in values]})
+
+for iid,tex in focus_tex.items():write(A/'models/item'/f'{iid}.json',{'parent':'minecraft:item/generated','textures':{'layer0':'emt:item/focus_'+tex}})
+for lang in ['en_us','ru_ru']:
+ path=A/'lang'/f'{lang}.json';data=json.loads(path.read_text())
+ for iid,tex in focus_tex.items():data['item.emt.'+iid]=data.get('item.EMT.focus.'+{'chargewand':'chargeWand'}.get(tex,tex)+'.name',iid.replace('_',' ').title())
+ write(path,data)

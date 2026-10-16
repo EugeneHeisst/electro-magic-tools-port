@@ -1,0 +1,31 @@
+package emt.audit;
+import emt.EMT;
+import emt.init.*;
+import emt.entity.*;
+import dev.eugheist.tc4modern.*;
+import thaumcraft.api.aspects.Aspect;
+import net.minecraft.client.*;
+import net.minecraft.core.*;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Blocks;
+import java.nio.file.*;
+public final class FocusClientAudit {
+ private static final BlockPos WALL=new BlockPos(0,152,76);
+ private static void shot(Minecraft mc,String name){try(var image=Screenshot.takeScreenshot(mc.getMainRenderTarget())){image.writeToFile(Path.of("audit",name+".png"));}catch(Exception e){throw new RuntimeException(e);}}
+ private static void focus(Minecraft mc,String id){mc.getSingleplayerServer().execute(()->{var p=mc.getSingleplayerServer().getPlayerList().getPlayers().getFirst();var wand=EMTRecipes.stack("tc4modern:wand");for(var a:Aspect.getPrimalAspects())WandData.add(wand,a,10,true);FociContent.setFocus(wand,EMTRecipes.stack("emt:"+id));p.setItemInHand(InteractionHand.MAIN_HAND,wand);});}
+ private static void use(Minecraft mc){mc.gameMode.useItem(mc.player,InteractionHand.MAIN_HAND);}
+ public static void tick(Minecraft mc,int t){var server=mc.getSingleplayerServer();
+  if(t==1110){mc.player.closeContainer();mc.options.setCameraType(CameraType.FIRST_PERSON);server.execute(()->{var p=server.getPlayerList().getPlayers().getFirst();p.getInventory().clearContent();for(var slot:EquipmentSlot.values())p.setItemSlot(slot,ItemStack.EMPTY);p.getAbilities().invulnerable=true;p.onUpdateAbilities();server.overworld().getEntities(p,new net.minecraft.world.phys.AABB(-12,145,62,12,165,92),entity->true).forEach(Entity::discard);p.teleportTo(server.overworld(),.5,151,70.5,0,0);p.setYHeadRot(0);p.yBodyRot=0;for(var pos:BlockPos.betweenClosed(new BlockPos(-8,150,65),new BlockPos(8,150,90)))server.overworld().setBlock(pos,Blocks.STONE.defaultBlockState(),3);for(var pos:BlockPos.betweenClosed(new BlockPos(-2,151,76),new BlockPos(2,155,76)))server.overworld().setBlock(pos,Blocks.GLASS.defaultBlockState(),3);var chest=EMTRecipes.stack("emt:infused_quantum_chestplate");ic2.api.item.ElectricItem.manager.charge(chest,100000,4,true,false);p.setItemSlot(EquipmentSlot.CHEST,chest);int i=1;for(var item:EMTItems.FOCI.values())p.getInventory().setItem(i++,new ItemStack(item.get()));});focus(mc,"focus_explosion");}
+  if(t==1130){for(var entry:EMTItems.FOCI.entrySet()){var stack=new ItemStack(entry.getValue().get());var model=mc.getItemRenderer().getModel(stack,mc.level,mc.player,0);if(model.getParticleIcon(net.neoforged.neoforge.client.model.data.ModelData.EMPTY).contents().name().getPath().equals("missingno"))throw new IllegalStateException("Missing focus icon "+entry.getKey());}EMT.LOG.info("[emt-client-audit] PASS all6 native focus icons");mc.setScreen(new net.minecraft.client.gui.screens.inventory.InventoryScreen(mc.player));}
+  if(t==1145)shot(mc,"foci_inventory");if(t==1150)mc.player.closeContainer();if(t==1155)use(mc);if(t==1159)shot(mc,"focus_explosion_laser");
+  if(t==1180)server.execute(()->{if(!server.overworld().isEmptyBlock(WALL))throw new IllegalStateException("Real wand packet did not explode glass");EMT.LOG.info("[emt-client-audit] PASS native explosion focus packet hits glass");});
+  if(t==1190)focus(mc,"focus_shield");if(t==1210){mc.options.setCameraType(CameraType.THIRD_PERSON_BACK);mc.options.keyUse.setDown(true);use(mc);}if(t==1225){if(mc.level.getEntitiesOfClass(EntityShield.class,mc.player.getBoundingBox().inflate(8)).size()!=1||!mc.player.isUsingItem())throw new IllegalStateException("Native shield is not visible/held on client");shot(mc,"focus_shield");server.execute(()->{var p=server.getPlayerList().getPlayers().getFirst();if(server.overworld().getEntitiesOfClass(EntityShield.class,p.getBoundingBox().inflate(8)).size()!=1||!p.isUsingItem())throw new IllegalStateException("Native shield was not held on server");EMT.LOG.info("[emt-client-audit] PASS native held shield exists on both sides");});}if(t==1240){mc.options.keyUse.setDown(false);mc.gameMode.releaseUsingItem(mc.player);}
+  if(t==1260)server.execute(()->{var p=server.getPlayerList().getPlayers().getFirst();if(!server.overworld().getEntitiesOfClass(EntityShield.class,p.getBoundingBox().inflate(8)).isEmpty())throw new IllegalStateException("Shield survives network release");EMT.LOG.info("[emt-client-audit] PASS native shield packet/release cleanup");});
+  if(t==1270){mc.options.setCameraType(CameraType.FIRST_PERSON);focus(mc,"focus_energy_ball");server.execute(()->{for(var pos:BlockPos.betweenClosed(WALL.offset(-2,-1,0),WALL.offset(2,3,0)))server.overworld().setBlock(pos,Blocks.OBSIDIAN.defaultBlockState(),3);var pig=new net.minecraft.world.entity.animal.Pig(EntityType.PIG,server.overworld());pig.setPos(2.5,152,74);pig.setNoAi(true);server.overworld().addFreshEntity(pig);});}
+  if(t==1290)use(mc);if(t==1320)shot(mc,"focus_energy_ball");if(t==1330)server.execute(()->{var p=server.getPlayerList().getPlayers().getFirst();var balls=server.overworld().getEntitiesOfClass(EntityEnergyBall.class,p.getBoundingBox().inflate(12));if(balls.size()!=1||!balls.getFirst().inTile()||ic2.api.item.ElectricItem.manager.getCharge(p.getItemBySlot(EquipmentSlot.CHEST))!=94880)throw new IllegalStateException("Energy ball packet, impact or EU payment");EMT.LOG.info("[emt-client-audit] PASS native energy ball packet/synced impact/5120EU");});
+  if(t==1370)focus(mc,"focus_christmas");if(t==1390)use(mc);if(t==1410){shot(mc,"focus_christmas");server.execute(()->{var p=server.getPlayerList().getPlayers().getFirst();if(server.overworld().getEntitiesOfClass(net.minecraft.world.entity.animal.SnowGolem.class,p.getBoundingBox().inflate(35)).isEmpty())throw new IllegalStateException("Christmas focus did not spawn snow golem");EMT.LOG.info("[emt-client-audit] PASS native Christmas focus packet creates snow golem");});}
+  if(t==1415)ClientAudit.book(mc,"Wand Focus: Charging",1);if(t==1430)shot(mc,"book_focus_charging");if(t==1440)ClientAudit.book(mc,"Energy Ball Focus",1);if(t==1455)shot(mc,"book_focus_energy_ball");if(t==1465)ClientAudit.book(mc,"Explosion Focus",1);if(t==1480)shot(mc,"book_focus_explosion");
+ }
+}

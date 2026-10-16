@@ -286,6 +286,99 @@
       ]
     },
     {
+      "key": "emt:explosionFocus",
+      "research": "Explosion Focus",
+      "result": {
+        "id": "emt:focus_explosion",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "FIRE": 30,
+        "MOTION": 16,
+        "WEAPON": 30,
+        "DEATH": 16
+      },
+      "central": {
+        "id": "tc4modern:focus_hellbat",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "ic2:mining_laser",
+          "count": 1
+        },
+        {
+          "id": "minecraft:arrow",
+          "count": 1
+        },
+        {
+          "id": "minecraft:gunpowder",
+          "count": 1
+        },
+        {
+          "id": "minecraft:firework_star",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:enchanted_fabric",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:shieldFocus",
+      "research": "Shield Focus",
+      "result": {
+        "id": "emt:focus_shield",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "AIR": 16,
+        "ARMOR": 20,
+        "CRYSTAL": 16,
+        "TRAP": 20,
+        "LIFE": 16
+      },
+      "central": {
+        "id": "tc4modern:focus_portable_hole",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "ic2:reinforced_stone",
+          "count": 1
+        },
+        {
+          "id": "ic2:reinforced_glass",
+          "count": 1
+        },
+        {
+          "id": "ic2:reinforced_stone",
+          "count": 1
+        },
+        {
+          "id": "ic2:reinforced_glass",
+          "count": 1
+        },
+        {
+          "id": "minecraft:soul_sand",
+          "count": 1
+        },
+        {
+          "id": "minecraft:obsidian",
+          "count": 1
+        },
+        {
+          "id": "minecraft:obsidian",
+          "count": 1
+        }
+      ]
+    },
+    {
       "key": "emt:potentiaGenerator",
       "research": "Potentia Generator",
       "result": {
@@ -786,6 +879,129 @@
         },
         {
           "id": "minecraft:oak_sapling",
+          "tag": "minecraft:saplings",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:chargeFocus",
+      "research": "Wand Focus: Charging",
+      "result": {
+        "id": "emt:focus_charge",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "EXCHANGE": 25,
+        "ENERGY": 32,
+        "MECHANISM": 32
+      },
+      "central": {
+        "id": "ic2:advanced_re_battery",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "ic2:generator",
+          "count": 1
+        },
+        {
+          "id": "ic2:batbox",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:air_shard",
+          "tag": "tc4modern:shards",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:air_shard",
+          "tag": "tc4modern:shards",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:wandChargeFocus",
+      "research": "Wand Focus: Wand Charging",
+      "result": {
+        "id": "emt:focus_wand_charging",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 5,
+      "aspects": {
+        "ENERGY": 48,
+        "AURA": 32,
+        "EXCHANGE": 48,
+        "GREED": 64
+      },
+      "central": {
+        "id": "emt:industrial_wand_charger",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:focus_charge",
+          "count": 1
+        },
+        {
+          "id": "ic2:energy_pack",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:energyBallFocus",
+      "research": "Energy Ball Focus",
+      "result": {
+        "id": "emt:focus_energy_ball",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "ENERGY": 10,
+        "MAGIC": 5,
+        "LIFE": 6
+      },
+      "central": {
+        "id": "tc4modern:focus_shock",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:tnt",
+          "count": 1
+        },
+        {
+          "id": "ic2:advanced_re_battery",
+          "count": 1
+        },
+        {
+          "id": "ic2:advanced_re_battery",
+          "count": 1
+        },
+        {
+          "id": "ic2:advanced_re_battery",
           "count": 1
         }
       ]
@@ -981,6 +1197,38 @@
         },
         "B": {
           "id": "emt:iron_omnitool",
+          "count": 1
+        }
+      }
+    },
+    {
+      "key": "emt:christmasFocus",
+      "research": "Kris-tmas Focus",
+      "result": {
+        "id": "emt:focus_christmas",
+        "count": 1
+      },
+      "kind": "arcane",
+      "aspects": {
+        "ORDER": 20,
+        "AIR": 20
+      },
+      "pattern": [
+        "XYX",
+        "YZY",
+        "XYX"
+      ],
+      "keys": {
+        "X": {
+          "id": "minecraft:snow",
+          "count": 1
+        },
+        "Y": {
+          "id": "minecraft:pumpkin",
+          "count": 1
+        },
+        "Z": {
+          "id": "tc4modern:focus_frost",
           "count": 1
         }
       }
@@ -1935,6 +2183,109 @@
       ]
     },
     {
+      "name": "Explosion Focus",
+      "x": 2,
+      "y": 3,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:focus_explosion",
+        "count": 1
+      },
+      "aspects": {
+        "FIRE": 3,
+        "DEATH": 2,
+        "WEAPON": 3
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:explosionFocus"
+      ]
+    },
+    {
+      "name": "Kris-tmas Focus",
+      "x": 3,
+      "y": 3,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:focus_christmas",
+        "count": 1
+      },
+      "aspects": {
+        "COLD": 2,
+        "BEAST": 5,
+        "LIFE": 6,
+        "DEATH": 2
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:christmasFocus"
+      ]
+    },
+    {
+      "name": "Shield Focus",
+      "x": 4,
+      "y": 3,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:focus_shield",
+        "count": 1
+      },
+      "aspects": {
+        "ARMOR": 5,
+        "AIR": 2,
+        "CRYSTAL": 3,
+        "TRAP": 2
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:shieldFocus"
+      ]
+    },
+    {
+      "name": "Energy Ball Focus",
+      "x": 1,
+      "y": 3,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:focus_energy_ball",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 10,
+        "MAGIC": 5,
+        "LIFE": 6
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "recipes": [
+        "emt:energyBallFocus"
+      ],
+      "flags": [
+        "Concealed"
+      ]
+    },
+    {
       "name": "Shield Block",
       "x": 4,
       "y": 5,
@@ -2522,6 +2873,57 @@
       ],
       "recipes": [
         "emt:electricHoeGrowth"
+      ]
+    },
+    {
+      "name": "Wand Focus: Charging",
+      "x": 5,
+      "y": 3,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:focus_charge",
+        "count": 1
+      },
+      "aspects": {
+        "EXCHANGE": 4,
+        "ENERGY": 5,
+        "MECHANISM": 4
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:chargeFocus"
+      ]
+    },
+    {
+      "name": "Wand Focus: Wand Charging",
+      "x": 7,
+      "y": 3,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:focus_wand_charging",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 5,
+        "AURA": 4,
+        "EXCHANGE": 4,
+        "GREED": 5
+      },
+      "parents": [
+        "Wand Focus: Charging"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:wandChargeFocus"
       ]
     },
     {
