@@ -1007,6 +1007,104 @@
       ]
     },
     {
+      "key": "emt:inventoryChargingRing",
+      "research": "Inventory Charging Ring",
+      "result": {
+        "id": "emt:inventory_charging_ring",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "ENERGY": 64,
+        "CRYSTAL": 32,
+        "MAGIC": 48
+      },
+      "central": {
+        "id": "tc4modern:mundane_ring",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:thaumium_drill",
+          "count": 1
+        },
+        {
+          "id": "ic2:generator",
+          "count": 1
+        },
+        {
+          "id": "ic2:geothermal_generator",
+          "count": 1
+        },
+        {
+          "id": "ic2:solar_panel",
+          "count": 1
+        },
+        {
+          "id": "ic2:wind_kinetic_generator",
+          "count": 1
+        },
+        {
+          "id": "ic2:water_kinetic_generator",
+          "count": 1
+        },
+        {
+          "id": "ic2:nuclear_reactor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:armorChargingRing",
+      "research": "Armor Charging Ring",
+      "result": {
+        "id": "emt:armor_charging_ring",
+        "count": 1
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "ENERGY": 64,
+        "ARMOR": 32,
+        "MAGIC": 48
+      },
+      "central": {
+        "id": "tc4modern:mundane_ring",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:electric_boots_traveller",
+          "count": 1
+        },
+        {
+          "id": "ic2:generator",
+          "count": 1
+        },
+        {
+          "id": "ic2:geothermal_generator",
+          "count": 1
+        },
+        {
+          "id": "ic2:solar_panel",
+          "count": 1
+        },
+        {
+          "id": "ic2:wind_kinetic_generator",
+          "count": 1
+        },
+        {
+          "id": "ic2:water_kinetic_generator",
+          "count": 1
+        },
+        {
+          "id": "ic2:nuclear_reactor",
+          "count": 1
+        }
+      ]
+    },
+    {
       "key": "emt:nanoWings",
       "research": "Nanosuit Wings",
       "result": {
@@ -2924,6 +3022,57 @@
       ],
       "recipes": [
         "emt:wandChargeFocus"
+      ]
+    },
+    {
+      "name": "Inventory Charging Ring",
+      "x": 0,
+      "y": -5,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:inventory_charging_ring",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 4,
+        "CRYSTAL": 4,
+        "MAGIC": 4
+      },
+      "parents": [],
+      "hidden": [
+        "Electric Magic Tools"
+      ],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:inventoryChargingRing"
+      ]
+    },
+    {
+      "name": "Armor Charging Ring",
+      "x": 0,
+      "y": -7,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:armor_charging_ring",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 4,
+        "ARMOR": 4,
+        "MAGIC": 4
+      },
+      "parents": [
+        "Inventory Charging Ring"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:armorChargingRing"
       ]
     },
     {

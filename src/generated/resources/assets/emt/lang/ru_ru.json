@@ -361,5 +361,9 @@
   "item.emt.focus_shield": "Набалдашник: Щит",
   "item.emt.focus_energy_ball": "Focus Energy Ball",
   "item.emt.focus_charge": "Набалдашник: Зарядка",
-  "item.emt.focus_wand_charging": "Набалдашник: Зарядка жезла"
+  "item.emt.focus_wand_charging": "Набалдашник: Зарядка жезла",
+  "item.emt.one_ring": "Кольцо Всевластия",
+  "item.emt.armor_charging_ring": "Кольцо для зарядки брони",
+  "item.emt.inventory_charging_ring": "Кольцо для зарядки инвентаря",
+  "message.emt.one_ring_warning": "§5Вы надели Кольцо. Порча вашего разума будет расти, и начнут происходить странные вещи."
 }
