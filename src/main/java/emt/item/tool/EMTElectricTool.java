@@ -34,6 +34,7 @@ public class EMTElectricTool extends ItemElectricTool {
  }
  private static int cost(Kind k){return new int[]{250,350,200,250,400,100,200,300}[k.ordinal()];}
  private static Set<ToolClass> classes(Kind k){if(k.ordinal()<2)return EnumSet.of(ToolClass.Pickaxe,ToolClass.Shovel);if(k.ordinal()<5)return EnumSet.of(ToolClass.Axe,ToolClass.Sword,ToolClass.Shears);return EnumSet.of(ToolClass.Pickaxe,ToolClass.Shovel,ToolClass.Axe,ToolClass.Sword,ToolClass.Shears);}
+ @Override public double getEnergyCost(ItemStack s){return energyCost();}
  public double energyCost(){return EMTConfig.TOOLS_IN_BORE.get()&&(kind.ordinal()<2||kind.ordinal()>=5)?1:operationEnergyCost;}
  private boolean cutting(){return toolClasses.contains(ToolClass.Shears);}
  private boolean shearDisabled(ItemStack s){return s.getOrDefault(DataComponents.CUSTOM_DATA,CustomData.EMPTY).copyTag().getBoolean("disableShear");}

@@ -5,7 +5,8 @@ license="All Rights Reserved"
 modId="emt"
 version="${version}"
 displayName="Electro-Magic Tools PORT"
-authors="Original: fewizz, TheSilentium; port: EugeneHeisst"
+authors="fewizz, TheSilentium"
+credits="Azanor, Tombenpotter, TehNut, the IC2 guys and the forge guys!"
 description='''Electro-Magic Tools 1.2.6.2 port for Minecraft 1.21.1.'''
 [[dependencies.emt]]
 modId="neoforge"
