@@ -1,5 +1,5 @@
 plugins { id 'java-library'; id 'net.neoforged.moddev' version '2.0.148' }
-version = '0.1.1'
+version = '0.1.2'
 group = 'dev.eugheist'
 base { archivesName = 'electro-magic-tools-modern' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -11,6 +11,7 @@ neoForge {
  runs {
   client { client(); gameDirectory = file('run') }
   server { server(); gameDirectory = file('run-server'); programArgument '--nogui' }
+  mpclient { client(); gameDirectory = file('run-mp'); programArguments.addAll '--width','1280','--height','900','--quickPlayMultiplayer','127.0.0.1:25583'; systemProperty 'emt.audit','mpclient' }
   audit { client(); gameDirectory = file('run-audit'); programArguments.addAll '--width','1280','--height','900','--quickPlaySingleplayer','EMTAudit'; systemProperty 'emt.audit','client' }
  }
  mods { emt { sourceSet sourceSets.main } }

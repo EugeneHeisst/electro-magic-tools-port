@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "emt:feather_wings",
+    "emt:thaumium_wings",
+    "emt:nano_wings",
+    "emt:quantum_wings",
+    "emt:infused_quantum_chestplate"
+  ]
+}

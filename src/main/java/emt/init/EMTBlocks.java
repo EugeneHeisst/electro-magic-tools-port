@@ -13,9 +13,11 @@ import java.util.*;
 public final class EMTBlocks {
  public static final DeferredRegister.Blocks BLOCKS=DeferredRegister.createBlocks(EMT.MODID);
  public static final DeferredRegister<BlockEntityType<?>> TILES=DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE,EMT.MODID);
+ public static final DeferredBlock<emt.block.BlockShield> SHIELD=BLOCKS.register("shield",emt.block.BlockShield::new);
  public static final Map<String,DeferredBlock<BlockTileEntity>> MACHINES=new LinkedHashMap<>();
  public static final Map<String,DeferredHolder<BlockEntityType<?>,BlockEntityType<?>>> TYPES=new LinkedHashMap<>();
  static {
+  EMTItems.ITEMS.registerSimpleBlockItem("shield",SHIELD);
   for(String kind:List.of("compressed","water","dark","order","fire","air","earth"))for(int stage=0;stage<3;stage++){String name=(stage==0?"":stage==1?"double_":"triple_")+kind+"_solar";final int rank=stage;add(name,(pos,state)->new TileSolar(pos,state,name,kind,rank));}
   for(String kind:List.of("potentia","ignis","auram","arbor","aer"))add(kind+"_generator",(pos,state)->new TileEssentiaGenerator(pos,state,kind));
   add("industrial_wand_charger",TileWandCharger::new);add("ethereal_processor",TileEtherealProcessor::new);

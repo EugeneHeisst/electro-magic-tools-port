@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "emt:electric_goggles",
+    "emt:nano_goggles",
+    "emt:quantum_goggles",
+    "emt:solar_goggles"
+  ]
+}

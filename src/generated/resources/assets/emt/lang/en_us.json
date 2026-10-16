@@ -340,5 +340,21 @@
   "item.emt.diamond_omnitool": "Diamond Omnitool",
   "item.emt.thaumium_omnitool": "Thaumium Omnitool",
   "item.emt.electric_hoe_growth": "Electric Hoe of Growth",
-  "item.emt.electric_scribing_tools": "Electric Scribing Tools"
+  "item.emt.electric_scribing_tools": "Electric Scribing Tools",
+  "item.emt.electric_goggles": "Electric Goggles of Revealing",
+  "item.emt.nano_goggles": "Nanosuit Goggles of Revealing",
+  "item.emt.quantum_goggles": "Quantum Goggles of Revealing",
+  "item.emt.solar_goggles": "Solar Goggles of Revealing",
+  "item.emt.electric_boots_traveller": "Electric Boots of the Traveller",
+  "item.emt.nano_boots_traveller": "Nanosuit Boots of the Traveller",
+  "item.emt.quantum_boots_traveller": "Quantum Boots of the Traveller",
+  "item.emt.feather_wings": "Feather Duct-Taped Wings",
+  "item.emt.thaumium_wings": "Thaumium Reinforced Wings",
+  "item.emt.nano_wings": "Nanosuit Wings",
+  "item.emt.quantum_wings": "Quantum Wings",
+  "item.emt.infused_quantum_chestplate": "Infused Quantum Chestplate",
+  "block.emt.shield": "Shield Block",
+  "key.categories.emt": "Electro-Magic Tools",
+  "message.emt.boost_on": "Traveller boost enabled",
+  "message.emt.boost_off": "Traveller boost disabled"
 }

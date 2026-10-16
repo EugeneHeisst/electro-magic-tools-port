@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "emt:electric_boots_traveller",
+    "emt:nano_boots_traveller",
+    "emt:quantum_boots_traveller"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "emt:feather_glued_cardboard_wing"
+    }
+  },
+  "result": {
+    "id": "emt:feather_wings",
+    "count": 1
+  }
+}

@@ -339,5 +339,21 @@
   "item.emt.diamond_omnitool": "Алмазный мультиинструмент",
   "item.emt.thaumium_omnitool": "Таум-мультиинструмент",
   "item.emt.electric_hoe_growth": "Электрическая мотыга Роста",
-  "item.emt.electric_scribing_tools": "Электрическая чернильница с пером"
+  "item.emt.electric_scribing_tools": "Электрическая чернильница с пером",
+  "item.emt.electric_goggles": "Электрические очки откровения",
+  "item.emt.nano_goggles": "Нано-очки откровения",
+  "item.emt.quantum_goggles": "Квантовые очки откровения",
+  "item.emt.solar_goggles": "Солнечные очки откровения",
+  "item.emt.electric_boots_traveller": "Электрические ботинки путешественника",
+  "item.emt.nano_boots_traveller": "Нано-ботинки путешественника",
+  "item.emt.quantum_boots_traveller": "Квантовые ботинки путешественника",
+  "item.emt.feather_wings": "Склеенные крылья из картона",
+  "item.emt.thaumium_wings": "Укреплённые таум-крылья",
+  "item.emt.nano_wings": "Нано-крылья",
+  "item.emt.quantum_wings": "Квантовые крылья",
+  "item.emt.infused_quantum_chestplate": "Наполненный квантовый нагрудник",
+  "block.emt.shield": "Щит-блок",
+  "key.categories.emt": "Electro-Magic Tools",
+  "message.emt.boost_on": "Ускорение ботинок включено",
+  "message.emt.boost_off": "Ускорение ботинок выключено"
 }

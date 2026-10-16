@@ -93,6 +93,106 @@
       ]
     },
     {
+      "key": "emt:thaumicQuantumHelmet",
+      "research": "Quantum Goggles of Revealing",
+      "result": {
+        "id": "emt:quantum_goggles",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "ARMOR": 25,
+        "SENSES": 25,
+        "ENERGY": 25
+      },
+      "central": {
+        "id": "emt:nano_goggles",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        {
+          "id": "minecraft:milk_bucket",
+          "count": 1
+        },
+        {
+          "id": "ic2:quantum_helmet",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:advanced_circuit",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:thaumicNanoHelmet",
+      "research": "Nanosuit Goggles of Revealing",
+      "result": {
+        "id": "emt:nano_goggles",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 5,
+      "aspects": {
+        "ARMOR": 16,
+        "SENSES": 16,
+        "ENERGY": 16
+      },
+      "central": {
+        "id": "emt:electric_goggles",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "count": 1
+        },
+        {
+          "id": "ic2:nano_helmet",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:carbon_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:electronic_circuit",
+          "count": 1
+        }
+      ]
+    },
+    {
       "key": "emt:thaumiumOmnitool",
       "research": "Thaumium Omnitool",
       "result": {
@@ -383,6 +483,158 @@
       ]
     },
     {
+      "key": "emt:solarHelmetRevealing",
+      "research": "Solar Helmet of Revealing",
+      "result": {
+        "id": "emt:solar_goggles",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 5,
+      "aspects": {
+        "ENERGY": 32,
+        "AIR": 32,
+        "LIGHT": 25
+      },
+      "central": {
+        "id": "emt:quantum_goggles",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "emt:double_compressed_solar",
+          "count": 1
+        },
+        {
+          "id": "ic2:glass_fibre_cable",
+          "count": 1
+        },
+        {
+          "id": "ic2:lapotron_crystal",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:order_shard",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:electricBootsTravel",
+      "research": "Electric Boots of the Traveller",
+      "result": {
+        "id": "emt:electric_boots_traveller",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 2,
+      "aspects": {
+        "ENERGY": 16,
+        "ARMOR": 32,
+        "MOTION": 32
+      },
+      "central": {
+        "id": "tc4modern:boots_traveller",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        {
+          "id": "ic2:electric_motor",
+          "count": 1
+        },
+        {
+          "id": "ic2:coil",
+          "count": 1
+        },
+        {
+          "id": "ic2:rubber_boots",
+          "count": 1
+        },
+        {
+          "id": "ic2:advanced_re_battery",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:nanoBootsTravel",
+      "research": "Nano Boots of the Traveller",
+      "result": {
+        "id": "emt:nano_boots_traveller",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 2,
+      "aspects": {
+        "ENERGY": 25,
+        "ARMOR": 32,
+        "MOTION": 48
+      },
+      "central": {
+        "id": "emt:electric_boots_traveller",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        {
+          "id": "ic2:nano_boots",
+          "count": 1
+        },
+        {
+          "id": "ic2:energy_crystal",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:quantumBootsTravel",
+      "research": "Quantum Boots of the Traveller",
+      "result": {
+        "id": "emt:quantum_boots_traveller",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 2,
+      "aspects": {
+        "ENERGY": 32,
+        "ARMOR": 32,
+        "MOTION": 64
+      },
+      "central": {
+        "id": "emt:nano_boots_traveller",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:diamond_block",
+          "count": 1
+        },
+        {
+          "id": "ic2:quantum_boots",
+          "count": 1
+        },
+        {
+          "id": "ic2:lapotron_crystal",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        }
+      ]
+    },
+    {
       "key": "emt:etheralProcessor",
       "research": "Etheral Processor",
       "result": {
@@ -539,6 +791,141 @@
       ]
     },
     {
+      "key": "emt:nanoWings",
+      "research": "Nanosuit Wings",
+      "result": {
+        "id": "emt:nano_wings",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 4,
+      "aspects": {
+        "FLIGHT": 48,
+        "AIR": 32,
+        "MECHANISM": 48,
+        "ENERGY": 32
+      },
+      "central": {
+        "id": "emt:thaumium_wings",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "ic2:carbon_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:carbon_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:carbon_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:nano_chestplate",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:enchanted_fabric",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:quantumWings",
+      "research": "Quantum Wings",
+      "result": {
+        "id": "emt:quantum_wings",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 6,
+      "aspects": {
+        "FLIGHT": 48,
+        "AIR": 32,
+        "MECHANISM": 48,
+        "ENERGY": 32,
+        "ARMOR": 48
+      },
+      "central": {
+        "id": "emt:nano_wings",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:quantum_chestplate",
+          "count": 1
+        },
+        {
+          "id": "tc4modern:enchanted_fabric",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "emt:infusedQuantumArmor",
+      "research": "Infused Quantum Armor",
+      "result": {
+        "id": "emt:infused_quantum_chestplate",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "infusion",
+      "instability": 5,
+      "aspects": {
+        "FLIGHT": 48,
+        "AIR": 32,
+        "MECHANISM": 48,
+        "ENERGY": 32,
+        "ARMOR": 48
+      },
+      "central": {
+        "id": "ic2:quantum_chestplate",
+        "count": 1
+      },
+      "components": [
+        {
+          "id": "minecraft:diamond",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "ic2:iridium_plate",
+          "count": 1
+        },
+        {
+          "id": "emt:shield",
+          "count": 1
+        },
+        {
+          "id": "emt:shield",
+          "count": 1
+        }
+      ]
+    },
+    {
       "key": "emt:diamondOmnitool",
       "research": "Diamond Omnitool",
       "result": {
@@ -594,6 +981,118 @@
         },
         "B": {
           "id": "emt:iron_omnitool",
+          "count": 1
+        }
+      }
+    },
+    {
+      "key": "emt:electricGoggles",
+      "research": "Electric Goggles",
+      "result": {
+        "id": "emt:electric_goggles",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "arcane",
+      "aspects": {
+        "AIR": 20,
+        "ORDER": 20,
+        "WATER": 20
+      },
+      "pattern": [
+        " Y ",
+        "AZA",
+        "BXB"
+      ],
+      "keys": {
+        "Z": {
+          "id": "tc4modern:goggles",
+          "count": 1
+        },
+        "X": {
+          "id": "ic2:electronic_circuit",
+          "count": 1
+        },
+        "Y": {
+          "id": "minecraft:diamond_helmet",
+          "count": 1
+        },
+        "A": {
+          "id": "ic2:re_battery",
+          "count": 1
+        },
+        "B": {
+          "id": "minecraft:repeater",
+          "count": 1
+        }
+      }
+    },
+    {
+      "key": "emt:electricGoggles2",
+      "research": "Electric Goggles",
+      "result": {
+        "id": "emt:electric_goggles",
+        "count": 1,
+        "charge": 10
+      },
+      "kind": "arcane",
+      "aspects": {
+        "AIR": 20,
+        "ORDER": 20,
+        "WATER": 20
+      },
+      "pattern": [
+        " Y ",
+        "AZA",
+        "BXB"
+      ],
+      "keys": {
+        "Z": {
+          "id": "tc4modern:goggles",
+          "count": 1
+        },
+        "X": {
+          "id": "ic2:electronic_circuit",
+          "count": 1
+        },
+        "Y": {
+          "id": "minecraft:diamond_helmet",
+          "count": 1
+        },
+        "A": {
+          "id": "ic2:re_battery",
+          "count": 1
+        },
+        "B": {
+          "id": "minecraft:repeater",
+          "count": 1
+        }
+      }
+    },
+    {
+      "key": "emt:shieldBlock",
+      "research": "Shield Block",
+      "result": {
+        "id": "emt:shield",
+        "count": 6
+      },
+      "kind": "arcane",
+      "aspects": {
+        "ORDER": 1,
+        "ENTROPY": 1
+      },
+      "pattern": [
+        "XYX",
+        "X X",
+        "XYX"
+      ],
+      "keys": {
+        "X": {
+          "id": "minecraft:glass",
+          "count": 1
+        },
+        "Y": {
+          "id": "minecraft:obsidian",
           "count": 1
         }
       }
@@ -684,6 +1183,68 @@
         },
         "Z": {
           "id": "ic2:energy_crystal",
+          "count": 1
+        }
+      }
+    },
+    {
+      "key": "emt:thaumiumWing",
+      "research": "Thaumium Reinforced Wings",
+      "result": {
+        "id": "emt:thaumium_wing",
+        "count": 1
+      },
+      "kind": "arcane",
+      "aspects": {
+        "FIRE": 48,
+        "WATER": 48,
+        "AIR": 48,
+        "EARTH": 48,
+        "ORDER": 48,
+        "ENTROPY": 48
+      },
+      "pattern": [
+        "XYZ",
+        "XYZ",
+        "XYZ"
+      ],
+      "keys": {
+        "X": {
+          "id": "emt:tainted_feather",
+          "count": 1
+        },
+        "Y": {
+          "id": "emt:thaumium_plate",
+          "count": 1
+        },
+        "Z": {
+          "id": "ic2:iron_plate",
+          "count": 1
+        }
+      }
+    },
+    {
+      "key": "emt:thaumiumWings",
+      "research": "Thaumium Reinforced Wings",
+      "result": {
+        "id": "emt:thaumium_wings",
+        "count": 1
+      },
+      "kind": "arcane",
+      "aspects": {
+        "FIRE": 48,
+        "WATER": 48,
+        "AIR": 48,
+        "EARTH": 48,
+        "ORDER": 48,
+        "ENTROPY": 48
+      },
+      "pattern": [
+        "XX"
+      ],
+      "keys": {
+        "X": {
+          "id": "emt:thaumium_wing",
           "count": 1
         }
       }
@@ -1141,6 +1702,30 @@
       ]
     },
     {
+      "name": "Feather Wings",
+      "x": 0,
+      "y": 2,
+      "complexity": 0,
+      "icon": {
+        "id": "emt:feather_wings",
+        "count": 1
+      },
+      "aspects": {},
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "AutoUnlock",
+        "Round"
+      ],
+      "recipes": [
+        "emt:cardboard",
+        "emt:feather_glued_cardboard_wing",
+        "emt:feather_wings"
+      ]
+    },
+    {
       "name": "Thaumium Drill",
       "x": -1,
       "y": -2,
@@ -1190,6 +1775,83 @@
       ],
       "recipes": [
         "emt:thaumiumChainsaw"
+      ]
+    },
+    {
+      "name": "Electric Goggles",
+      "x": 1,
+      "y": -2,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:electric_goggles",
+        "count": 1
+      },
+      "aspects": {
+        "ARMOR": 8,
+        "ENERGY": 5,
+        "SENSES": 6
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:electricGoggles",
+        "emt:electricGoggles2"
+      ]
+    },
+    {
+      "name": "Nanosuit Goggles of Revealing",
+      "x": 2,
+      "y": -2,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:nano_goggles",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 5,
+        "SENSES": 8,
+        "ARMOR": 6
+      },
+      "parents": [
+        "Electric Goggles"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:thaumicNanoHelmet"
+      ]
+    },
+    {
+      "name": "Quantum Goggles of Revealing",
+      "x": 3,
+      "y": -2,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:quantum_goggles",
+        "count": 1
+      },
+      "aspects": {
+        "ARMOR": 8,
+        "ENERGY": 4,
+        "SENSES": 6
+      },
+      "parents": [
+        "Nanosuit Goggles of Revealing"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:thaumicQuantumHelmet"
       ]
     },
     {
@@ -1270,6 +1932,31 @@
       "recipes": [
         "emt:thaumiumOmnitool",
         "emt:diamondOmnitoolToThaumium"
+      ]
+    },
+    {
+      "name": "Shield Block",
+      "x": 4,
+      "y": 5,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:shield",
+        "count": 1
+      },
+      "aspects": {
+        "ARMOR": 3,
+        "TRAP": 2
+      },
+      "parents": [
+        "Shield Focus"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:shieldBlock"
       ]
     },
     {
@@ -1493,6 +2180,109 @@
         "emt:tripleCompressedSolar",
         "emt:compressedSolar",
         "emt:doubleCompressedSolar"
+      ]
+    },
+    {
+      "name": "Solar Helmet of Revealing",
+      "x": -2,
+      "y": -5,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:solar_goggles",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 5,
+        "AIR": 2,
+        "LIGHT": 4
+      },
+      "parents": [
+        "Compressed Solars"
+      ],
+      "hidden": [
+        "Quantum Goggles of Revealing"
+      ],
+      "flags": [
+        "Secondary"
+      ],
+      "recipes": [
+        "emt:solarHelmetRevealing"
+      ]
+    },
+    {
+      "name": "Electric Boots of the Traveller",
+      "x": 2,
+      "y": 0,
+      "complexity": 1,
+      "icon": {
+        "id": "emt:electric_boots_traveller",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 2,
+        "ARMOR": 5,
+        "MOTION": 2
+      },
+      "parents": [
+        "Electric Magic Tools"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:electricBootsTravel"
+      ]
+    },
+    {
+      "name": "Nano Boots of the Traveller",
+      "x": 4,
+      "y": 0,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:nano_boots_traveller",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 3,
+        "ARMOR": 5,
+        "MOTION": 3
+      },
+      "parents": [
+        "Electric Boots of the Traveller"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:nanoBootsTravel"
+      ]
+    },
+    {
+      "name": "Quantum Boots of the Traveller",
+      "x": 6,
+      "y": 0,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:quantum_boots_traveller",
+        "count": 1
+      },
+      "aspects": {
+        "ENERGY": 4,
+        "ARMOR": 5,
+        "MOTION": 4
+      },
+      "parents": [
+        "Nano Boots of the Traveller"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:quantumBootsTravel"
       ]
     },
     {
@@ -1732,6 +2522,111 @@
       ],
       "recipes": [
         "emt:electricHoeGrowth"
+      ]
+    },
+    {
+      "name": "Thaumium Reinforced Wings",
+      "x": 0,
+      "y": 4,
+      "complexity": 0,
+      "icon": {
+        "id": "emt:thaumium_wings",
+        "count": 1
+      },
+      "aspects": {
+        "FLIGHT": 5,
+        "AIR": 5,
+        "MECHANISM": 8
+      },
+      "parents": [
+        "Feather Wings"
+      ],
+      "hidden": [],
+      "flags": [
+        "Secondary",
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:thaumiumWing",
+        "emt:thaumiumWings"
+      ]
+    },
+    {
+      "name": "Nanosuit Wings",
+      "x": 0,
+      "y": 6,
+      "complexity": 2,
+      "icon": {
+        "id": "emt:nano_wings",
+        "count": 1
+      },
+      "aspects": {
+        "FLIGHT": 5,
+        "AIR": 5,
+        "MECHANISM": 8,
+        "ENERGY": 4
+      },
+      "parents": [
+        "Thaumium Reinforced Wings"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:nanoWings"
+      ]
+    },
+    {
+      "name": "Quantum Wings",
+      "x": 0,
+      "y": 8,
+      "complexity": 3,
+      "icon": {
+        "id": "emt:quantum_wings",
+        "count": 1
+      },
+      "aspects": {
+        "FLIGHT": 5,
+        "AIR": 5,
+        "MECHANISM": 8,
+        "ENERGY": 4
+      },
+      "parents": [
+        "Nanosuit Wings"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:quantumWings"
+      ]
+    },
+    {
+      "name": "Infused Quantum Armor",
+      "x": 0,
+      "y": 10,
+      "complexity": 4,
+      "icon": {
+        "id": "emt:infused_quantum_chestplate",
+        "count": 1
+      },
+      "aspects": {
+        "FLIGHT": 5,
+        "AIR": 5,
+        "MECHANISM": 8,
+        "ENERGY": 4
+      },
+      "parents": [
+        "Quantum Wings"
+      ],
+      "hidden": [],
+      "flags": [
+        "Concealed"
+      ],
+      "recipes": [
+        "emt:infusedQuantumArmor"
       ]
     }
   ]

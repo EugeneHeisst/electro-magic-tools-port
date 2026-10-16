@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "emt:electric_goggles",
+    "emt:nano_goggles",
+    "emt:quantum_goggles",
+    "emt:solar_goggles",
+    "emt:electric_boots_traveller",
+    "emt:nano_boots_traveller",
+    "emt:quantum_boots_traveller",
+    "emt:feather_wings",
+    "emt:thaumium_wings",
+    "emt:nano_wings",
+    "emt:quantum_wings",
+    "emt:infused_quantum_chestplate"
+  ]
+}

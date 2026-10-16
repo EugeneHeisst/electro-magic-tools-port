@@ -31,3 +31,6 @@ type="required"
 versionRange="[${tc4_version},)"
 ordering="AFTER"
 side="BOTH"
+
+[[mixins]]
+config="emt.mixins.json"
