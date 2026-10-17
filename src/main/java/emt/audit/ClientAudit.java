@@ -51,6 +51,6 @@ public class ClientAudit {
   if(tick==1040){mc.options.keyShift.setDown(true);KeyMapping.click(com.mojang.blaze3d.platform.InputConstants.Type.KEYSYM.getOrCreate(org.lwjgl.glfw.GLFW.GLFW_KEY_Z));}
   if(tick==1060){mc.options.keyShift.setDown(false);server.execute(()->{var p=server.getPlayerList().getPlayers().getFirst();var chest=p.getItemBySlot(net.minecraft.world.entity.EquipmentSlot.CHEST);if(emt.item.armor.ItemInfusedChestplate.attachment(chest)!=0||!p.getMainHandItem().is(EMTItems.ARMOR.get("quantum_wings").get())||ic2.api.item.ElectricItem.manager.getCharge(p.getMainHandItem())!=7777.5)throw new IllegalStateException("Z detach packet failed to return original module");EMT.LOG.info("[emt-client-audit] PASS real Z key detach packet preserves module EU");});}
   if(tick==1080){mc.options.setCameraType(CameraType.FIRST_PERSON);book(mc,"Infused Quantum Armor",0);}if(tick==1095)shot(mc,"book_infused_chestplate");
-  FocusClientAudit.tick(mc,tick);RingsClientAudit.tick(mc,tick);HammerClientAudit.tick(mc,tick);NodeCloudClientAudit.tick(mc,tick);UUClientAudit.tick(mc,tick);if(tick==3102)ChainsawClientAudit.run(mc);if(tick==3155)EMT.LOG.info("[emt-client-audit] DONE");if(tick>=3160)mc.stop();
+  FocusClientAudit.tick(mc,tick);RingsClientAudit.tick(mc,tick);HammerClientAudit.tick(mc,tick);NodeCloudClientAudit.tick(mc,tick);UUClientAudit.tick(mc,tick);if(tick==3102)ChainsawClientAudit.run(mc);if(tick==3150){mc.setScreen(null);JetpackClientAudit.run(mc);}if(tick==3170)EMT.LOG.info("[emt-client-audit] DONE");if(tick>=3175)mc.stop();
  }
 }
