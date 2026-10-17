@@ -125,3 +125,10 @@ Next: full UU transmutation/infusion recipes, research-disable flags, original e
 - Restored original three saw idle/stop audio through native client sound lifecycle; pause/logout/switch/reload handling. Hidden NoOutput audit confirms native sound events, resolved Oggs and loop lifecycle.
 
 Server408/408, hidden82models/book/JEI/audio audit passed; combined full-pack server29/29/client14/14 passed. Final build/archive versions/0.1.9 includes screenshots/logs/SHA. Dependencies now exact tested IC2.23/ASP.12/TC4.177. User explicitly approved releases and installation in latest Claude session; latest deployment/handoff ../CLAUDE_CONTINUE_PORTS.md.
+
+
+## Codex 2026-10-17 04:50 Moscow — LOCAL 0.1.10 (production stays0.1.9)
+
+OneRing no longer persists creative/spectator immunity after native Survival transition/removal; independently granted prior Survival immunity retained. Seven actualBaubles601tick/menu/damage regressions. Standalone/attachedwing water/rain penalties restored as two separate additions from original;16nativewater/rain/shoreboth/config/creative checks. Server431/431, buildPASS, versions/0.1.10. Requires localTC4.178 snapshot-before-EU ArcaneBorefix; IC2.23/ASP.12. Newlocal pair not installed/published. See ../CLAUDE_CONTINUE_PORTS.md for current fullpack/deployment/authorization and actual Claude handoff.
+
+Final local-next full production-pack regression: dedicated29/29, hidden client/JEI14/14 (2026-10-17 04:51 Moscow); exact EMT.10+TC178 with IC2.23/ASP.12/Gravi.14. Archived full-pack-server.log/full-pack-client.log. Production unchanged.
