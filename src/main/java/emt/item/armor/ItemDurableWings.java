@@ -11,7 +11,7 @@ import thaumcraft.api.*;
 import thaumcraft.api.aspects.Aspect;
 public class ItemDurableWings extends ItemArmorIC2 implements IVisDiscountGear,IRepairable {
  public final boolean reinforced;
- public ItemDurableWings(boolean reinforced){super(EMTArmorMaterials.FEATHER,ArmorItem.Type.CHESTPLATE,new Properties().durability(reinforced?250:120).rarity(Rarity.UNCOMMON));this.reinforced=reinforced;}
+ public ItemDurableWings(boolean reinforced){super(reinforced?dev.eugheist.tc4modern.ThaumiumContent.ARMOR:EMTArmorMaterials.FEATHER,ArmorItem.Type.CHESTPLATE,new Properties().durability(reinforced?250:120).rarity(Rarity.UNCOMMON));this.reinforced=reinforced;}
  @Override public int getVisDiscount(ItemStack s,Player p,Aspect a){return reinforced?4:0;}
  @Override public void appendHoverText(ItemStack s,TooltipContext c,java.util.List<net.minecraft.network.chat.Component> lines,TooltipFlag f){super.appendHoverText(s,c,lines,f);if(reinforced)lines.add(net.minecraft.network.chat.Component.translatable("tooltip.EMT.visDiscount").append(": 4%"));}
  @Override public boolean isMetalArmor(ItemStack s,Player p){return reinforced;}

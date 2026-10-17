@@ -21,5 +21,9 @@ public final class UUClientAudit {
   if(t==3060)ClientAudit.book(mc,"Tiny Uranium",0);if(t==3075)shot(mc,"book_tiny_uranium7");
   if(t==3080){mc.player.closeContainer();if(net.neoforged.fml.ModList.get().isLoaded("jei"))try{Class.forName("mezz.jei.api.runtime.IJeiRuntime");mc.setScreen(new net.minecraft.client.gui.screens.inventory.InventoryScreen(mc.player));}catch(Exception e){throw new RuntimeException(e);}}
   if(t==3100){shot(mc,"uu_jei_inventory");EMT.LOG.info("[emt-client-audit] PASS native UU/TinyUranium book pages and JEI render");}
+  if(t==3110){mc.player.closeContainer();mc.getSingleplayerServer().execute(()->{var server=mc.getSingleplayerServer();var player=server.getPlayerList().getPlayers().getFirst();server.getCommands().performPrefixedCommand(player.createCommandSourceStack(),"emt_outputs");for(int slot=0;slot<9;slot++)if(player.getInventory().getItem(slot).is(net.minecraft.world.item.Items.WRITTEN_BOOK)){player.getInventory().selected=slot;player.connection.send(new net.minecraft.network.protocol.game.ClientboundSetCarriedItemPacket(slot));break;}player.containerMenu.broadcastChanges();});}
+  if(t==3130){if(!mc.player.getMainHandItem().is(net.minecraft.world.item.Items.WRITTEN_BOOK))throw new IllegalStateException("Outputs command book did not synchronize");mc.gameMode.useItem(mc.player,net.minecraft.world.InteractionHand.MAIN_HAND);}
+  if(t==3145){if(!(mc.screen instanceof net.minecraft.client.gui.screens.inventory.BookViewScreen))throw new IllegalStateException("Native outputs book GUI did not open");shot(mc,"emt_outputs_native_book");EMT.LOG.info("[emt-client-audit] PASS native emt_outputs command book and GUI");}
+
  }
 }

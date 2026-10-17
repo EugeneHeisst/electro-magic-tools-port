@@ -114,3 +114,14 @@ Next: full UU transmutation/infusion recipes, research-disable flags, original e
 - TC4 fixes: addon categories must not suppress native research initialization; infusion aspect synthesis accounts for actual output count. No production changes (TC4 still172).
 - Validation: 355/355 server, hidden silent native client all82EMTmodels +3clusters, book UU multi-counts/order and TinyUranium7, JEI; final build/archive versions/0.1.7. Client scene -PauditStart=2924.
 - Original capesOn/smoke config fields have no consumers in supplied source, not gameplay omissions. Next: Gravi Suit 3.1.1 port, then combined regressions. Reference extracted/decompiled in ../gravisuite-modern/related/gravisuite-reference. Continuous goal remains active; no push/release/deploy.
+
+
+## Codex 2026-10-17 — EMT 0.1.9 before approved deployment
+
+- Growth hoe now checks loaded chunks and native mayInteract for every target; genuine world-border and tool-modification cancellation regressions.
+- Chainsaws/omnitools require paid enabled shearing; unsupported free shears actions disabled. Removed legacy IShearable block hook: modern default onSheared returns no block drops. Native break/loot restores leaves including the final full EU payment, protection/stats/XP. Six cutting tools tested.
+- Thaumium wings use native TC4 thaumium material:6armor/25enchantability/thaumium repair. Real armor attributes and anvil tested.
+- Restored /emt_outputs player command: real written book with current configured aspect EU, fractional/capped values, all aspects and native save/load. Actual client command/book GUI inspected.
+- Restored original three saw idle/stop audio through native client sound lifecycle; pause/logout/switch/reload handling. Hidden NoOutput audit confirms native sound events, resolved Oggs and loop lifecycle.
+
+Server408/408, hidden82models/book/JEI/audio audit passed; combined full-pack server29/29/client14/14 passed. Final build/archive versions/0.1.9 includes screenshots/logs/SHA. Dependencies now exact tested IC2.23/ASP.12/TC4.177. User explicitly approved releases and installation in latest Claude session; latest deployment/handoff ../CLAUDE_CONTINUE_PORTS.md.

@@ -1,0 +1,8 @@
+{
+  "chainsaw.idle": {
+    "sounds": [{"name": "emt:tools/chainsaw/idle"}]
+  },
+  "chainsaw.stop": {
+    "sounds": [{"name": "emt:tools/chainsaw/stop"}]
+  }
+}
