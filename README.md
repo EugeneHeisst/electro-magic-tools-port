@@ -1,4 +1,4 @@
-# Electro-Magic Tools PORT
+# Electro-Magic Tools UNOFFICIAL PORT
 
 Неофициальный порт **Electro-Magic Tools 1.2.6.2** (fewizz, TheSilentium; оригинальный проект Tombenpotter) на **Minecraft 1.21.1 / NeoForge 21.1.256**. Версия **0.1.10**.
 
@@ -10,7 +10,7 @@
 
 ## Зависимости и сборка
 
-Java 21, **IC2 PORT 0.1.23**, **Thaumcraft PORT 0.17.178**. **ASP PORT 0.1.2** включён в стенд разработки; JEI необязателен. Версии архивных зависимостей заданы в `gradle.properties`, пути — в `build.gradle`.
+Java 21, **IC2 UNOFFICIAL PORT 0.1.23**, **Thaumcraft UNOFFICIAL PORT 0.17.178**. **ASP UNOFFICIAL PORT 0.1.2** включён в стенд разработки; JEI необязателен. Версии архивных зависимостей заданы в `gradle.properties`, пути — в `build.gradle`.
 
 Сборка: `./build.sh`, результат `build/libs/electro-magic-tools-modern-0.1.10.jar`. Архивы JAR, логи и скриншоты — `versions/<version>/`.
 
