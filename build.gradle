@@ -1,5 +1,5 @@
 plugins { id 'java-library'; id 'net.neoforged.moddev' version '2.0.148' }
-version = '0.1.14'
+version = '0.1.15'
 group = 'dev.eugheist'
 base { archivesName = 'electro-magic-tools-modern' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -16,12 +16,55 @@ neoForge {
  }
  mods { emt { sourceSet sourceSets.main } }
 }
-def jeiJar = '/home/eugheist/.local/share/PrismLauncher/instances/1.21.1/minecraft/mods/jei-1.21.1-neoforge-19.57.0.451.jar'
-dependencies {
- implementation files("../industrialcraft2-modern/versions/${ic2_version}/industrialcraft2-modern-${ic2_version}.jar")
- implementation files("/home/eugheist/thaumcraft4-modern/versions/${tc4_version}/tc4modern-${tc4_version}.jar")
- runtimeOnly files("../advanced-solar-panels-modern/versions/${asp_version}/advanced-solar-panels-modern-${asp_version}.jar")
- compileOnly files(jeiJar)
- if (providers.gradleProperty('withJei').getOrElse('false').toBoolean()) runtimeOnly files(jeiJar)
+// Local addon JARs can be supplied without depending on an author's filesystem.
+def addonJar = { String propertyName, String environmentName, String artifactName ->
+    file(providers.gradleProperty(propertyName)
+        .orElse(providers.environmentVariable(environmentName))
+        .getOrElse("libs/${artifactName}"))
 }
-processResources { inputs.property 'version',version; filesMatching('META-INF/neoforge.mods.toml') { expand version:version,ic2_version:ic2_version,tc4_version:tc4_version } }
+def ic2Jar = addonJar('ic2LocalJar', 'IC2_JAR', "industrialcraft2-modern-${ic2_version}.jar")
+def tc4Jar = addonJar('tc4LocalJar', 'TC4_JAR', "tc4modern-${tc4_version}.jar")
+def aspLocalPath = providers.gradleProperty('aspLocalJar').orElse(providers.environmentVariable('ASP_JAR'))
+def aspJar = file(aspLocalPath.getOrElse("libs/advanced-solar-panels-modern-${asp_version}.jar"))
+def localJars = [ic2LocalJar: ic2Jar, tc4LocalJar: tc4Jar]
+def jeiLocalPath = providers.gradleProperty('jeiLocalJar').orElse(providers.environmentVariable('JEI_JAR'))
+def withJei = providers.gradleProperty('withJei').getOrElse('false').toBoolean()
+repositories {
+    maven { url = uri('https://maven.blamejared.com'); content { includeGroup 'mezz.jei' } }
+}
+dependencies {
+    implementation files(ic2Jar, tc4Jar)
+    // ASP is an optional development-runtime integration, not a required EMT dependency.
+    if (aspLocalPath.isPresent() || aspJar.isFile()) {
+        localJars['aspLocalJar'] = aspJar
+        runtimeOnly files(aspJar)
+    }
+    if (jeiLocalPath.isPresent()) {
+        def localJei = file(jeiLocalPath.get())
+        localJars['jeiLocalJar'] = localJei
+        compileOnly files(localJei)
+        if (withJei) runtimeOnly files(localJei)
+    } else {
+        compileOnly "mezz.jei:jei-1.21.1-common-api:${jei_version}"
+        compileOnly "mezz.jei:jei-1.21.1-neoforge-api:${jei_version}"
+        if (withJei) runtimeOnly "mezz.jei:jei-1.21.1-neoforge:${jei_version}"
+    }
+}
+// Fail with a useful setup message instead of hundreds of missing-class errors.
+def validateLocalDependencies = tasks.register('validateLocalDependencies') {
+    doLast {
+        localJars.each { propertyName, dependency ->
+            if (!dependency.isFile()) {
+                throw new GradleException("Missing addon JAR for ${propertyName}. Put the release JAR in libs/ or set -P${propertyName}=<path-to-jar>; see README.md.")
+            }
+        }
+    }
+}
+tasks.withType(JavaCompile).configureEach { dependsOn validateLocalDependencies }
+
+processResources {
+    inputs.property 'version', version
+    inputs.property 'ic2_version', ic2_version
+    inputs.property 'tc4_version', tc4_version
+    filesMatching('META-INF/neoforge.mods.toml') { expand version: version, ic2_version: ic2_version, tc4_version: tc4_version }
+}
